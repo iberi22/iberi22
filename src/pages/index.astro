@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import '../styles/global.css';
+
+const featuredProjects = [
+  {
+    title: "ManteniApp",
+    repo: "iberi22/manteniapp",
+    url: "https://tripro.cl/manteniapp",
+    tech: "TypeScript, React, Prisma, PostgreSQL",
+    description: "SaaS de gestión de mantenimiento industrial con IA, órdenes de trabajo, activos y modo offline.",
+    featured: true,
+  },
+  {
+    title: "WorldExams",
+    repo: "iberi22/worldexams",
+    url: "https://saberparatodos.space",
+    tech: "Astro, Svelte, TailwindCSS, Supabase",
+    description: "Plataforma de evaluaciones diagnósticas con +2000 preguntas curadas para 16+ países.",
+    featured: true,
+  },
+  {
+    title: "OrionHealth",
+    repo: "iberi22/OrionHealth",
+    url: "https://iberi22.github.io/OrionHealth/",
+    tech: "Flutter, Dart, HealthKit/Health Connect",
+    description: "App de salud personal con IA, registro de métricas y privacidad first.",
+    featured: true,
+  },
+  {
+    title: "GOS",
+    repo: "iberi22/gastronomic-open-standard-GOS",
+    url: "https://iberi22.github.io/gastronomic-open-standard-GOS/",
+    tech: "Python, Astro, Markdown",
+    description: "Estándar abierto para documentación culinaria estructurada con recetas e ingredientes.",
+    featured: true,
+  },
+];
+
+const openSourceProjects = [
+  { title: "Tripro Landing", repo: "iberi22/tripro_landing_page_astro" },
+  { title: "VibroMonitor", repo: "iberi22/vibromonitor" },
+  { title: "Gestalt Rust", repo: "iberi22/gestalt-rust" },
+  { title: "Synapse Protocol", repo: "iberi22/synapse-protocol" },
+  { title: "Software Factory", repo: "iberi22/software-factory" },
+  { title: "OpenClaw Engram", repo: "iberi22/openclaw-engram" },
+];
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background gradient orbs -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-1/4 -left-32 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-slate-900/80 border border-slate-700 rounded-full text-sm text-slate-300 mb-8">
+        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+        Open Source First
+      </div>
+
+      <h1 class="text-5xl sm:text-6xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight">
+        Southwest<br />
+        <span class="text-gradient">AI Labs</span>
+      </h1>
+
+      <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Laboratory developing intelligent agents with infinite memory, open protocols, and industrial IoT solutions.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#projects" class="btn-primary flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+          </svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn-secondary flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          Contact
+        </a>
+      </div>
+
+      <!-- Tech badges -->
+      <div class="mt-16 flex flex-wrap items-center justify-center gap-3">
+        {["Rust", "TypeScript", "Astro", "Python", "Flutter", "React", "PostgreSQL", "Supabase"].map((t) => (
+          <span class="px-3 py-1 bg-slate-900 border border-slate-700 rounded-full text-slate-400 text-sm font-medium">
+            {t}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Featured Projects</h2>
+        <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+          Production-grade software products built by our team.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {featuredProjects.map((project) => (
+          <ProjectCard {...project} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Source Section -->
+  <section id="open-source" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Open Source</h2>
+        <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+          Open protocols, tools and libraries from our lab.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {openSourceProjects.map((project) => (
+          <a
+            href={`https://github.com/${project.repo}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
+          >
+            <div class="flex items-center gap-3 mb-2">
+              <svg class="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span class="font-semibold text-white group-hover:text-blue-400 transition-colors">
+                {project.title}
+              </span>
+            </div>
+            <p class="text-slate-500 text-sm font-mono">{project.repo}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Sobre Nosotros</h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-10 rounded-full"></div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 mb-10">
+        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+          <span class="text-white text-2xl font-bold">SB</span>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-1">Sebastian Belalcazar</h3>
+        <p class="text-blue-400 mb-6">Founder & CEO · Southwest AI Labs</p>
+
+        <blockquote class="text-slate-300 text-lg leading-relaxed italic border-l-4 border-blue-500 pl-6 text-left">
+          "La premisa principal es la comodidad de todos los seres humanos en la Tierra, brindando tecnología segura, abierta e inteligente."
+        </blockquote>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        {[
+          { label: "Projects", value: "16+" },
+          { label: "Open Source Repos", value: "20+" },
+          { label: "Technologies", value: "8+" },
+        ].map((stat) => (
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+            <div class="text-3xl font-bold text-white mb-1">{stat.value}</div>
+            <div class="text-slate-400 text-sm">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Contact</h2>
+      <p class="text-slate-400 text-lg mb-12">
+        Interested in working together or have questions?
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <a
+          href="https://github.com/iberi22"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
+        >
+          <div class="w-14 h-14 bg-slate-800 group-hover:bg-slate-700 rounded-xl mx-auto mb-4 flex items-center justify-center transition-colors">
+            <svg class="w-7 h-7 text-slate-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <h3 class="font-bold text-white mb-1">GitHub</h3>
+          <p class="text-slate-400 text-sm">@iberi22</p>
+        </a>
+
+        <a
+          href="https://t.me/BeRi0n3"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
+        >
+          <div class="w-14 h-14 bg-slate-800 group-hover:bg-slate-700 rounded-xl mx-auto mb-4 flex items-center justify-center transition-colors">
+            <svg class="w-7 h-7 text-slate-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </div>
+          <h3 class="font-bold text-white mb-1">Telegram</h3>
+          <p class="text-slate-400 text-sm">@BeRi0n3</p>
+        </a>
+
+        <a
+          href="https://github.com/southwest-ai-labs"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
+        >
+          <div class="w-14 h-14 bg-slate-800 group-hover:bg-slate-700 rounded-xl mx-auto mb-4 flex items-center justify-center transition-colors">
+            <svg class="w-7 h-7 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-white mb-1">Website</h3>
+          <p class="text-slate-400 text-sm">southwest-ai-labs</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .text-gradient {
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>
