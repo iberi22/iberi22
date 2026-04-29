@@ -9,4 +9,3 @@ I believe in building in public. I invite you to navigate my repositories to see
 
 Take a look around, break things down, and let's connect.
 Issues are free!
-o
