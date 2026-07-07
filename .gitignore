@@ -3,6 +3,7 @@ dist/
 # generated types
 .astro/
 
+<<<<<<< HEAD
 # dependencies
 node_modules/
 
@@ -22,3 +23,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+=======
+# Personal files
+*.md
+!README.md
+!github-profile/README.md
+>>>>>>> 8d0ef95 (chore: sync local changes)
