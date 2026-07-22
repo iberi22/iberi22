@@ -1,35 +1,31 @@
 <div align="center">
-
-  <!-- Badges -->
- <!--  <img src="https://img.shields.io/badge/Aesthetic-Cyber__Minimalist-00ff41?style=for-the-badge&logoColor=black&labelColor=101010" alt="Aesthetic" />  -->
-  <img src="https://img.shields.io/badge/Status-Online-00ff41?style=for-the-badge&logoColor=black&labelColor=101010" alt="Status" />
-
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff41,100:0066ff&height=200&section=header&text=SWAL&fontSize=60&fontColor=ffffff&animation=fadeIn" width="100%" />
 </div>
 
 <br />
 
-🧑‍🔬 // BIO_DATA
+> Your profile README is at [`profile/README.md`](profile/README.md). This file is the repo root readme.
 
-Welcome to my digital lab. Here I design systems that blend decentralization, computational ethics, and high-performance architecture.
+<br />
 
+```yaml
+# iberi22/iberi22 — GitHub Profile Repo
+# Southwest AI Labs (SWAL)
+# Soberanía de la información · Web3 · Código abierto
+```
 
-🧠 // KNOWLEDGE_BASE
+## 📁 Repo Structure
 
-Core Focus:
-- Rust for blazing-fast, resource-efficient applications.
-- Scalable infrastructure with libp2p, Tor, and SurrealDB.
-- Agent-driven architectures with bio-inspired memory and embedded ethical constraints.
+```
+├── profile/README.md   ← Your GitHub Profile README (shows on github.com/iberi22)
+├── github-profile/     ← Legacy profile card (deprecated)
+├── src/                ← Astro portfolio site
+├── public/             ← Static assets
+├── swal-hacker/        ← SWAL style assets
+├── docs/               ← SRC/SRS documentation
+└── .gitcore/           ← GitCore protocol files
+```
 
-Flagship Projects:
-- Edge Hive: A sovereign edge-computing platform. Any device—Android, PC, Docker, VPS—becomes a cryptographic node with Tor + libp2p networking, enabling peer-to-peer synchronization and distributed resilience.
-- Synapse Protocol: A distributed memory protocol modeled on biology. Memories consolidate like sleep cycles, while every action is filtered through an immutable ethical vector: Do no harm.
-
-Philosophy:
-- Digital Minimalism: Technology as a tool, not a distraction.
-- Genesis Block Ethics: Every computation begins with responsibility.
-- One Brain, Many Hats: A single adaptable model, extended with LoRA, capable of inhabiting multiple roles.
-
-Vision:
--  To design AI-native infrastructures where computation is not just efficient, but ethical, distributed, and human-aligned.
----
-
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0066ff,100:00ff41&height=80&section=footer" width="100%" />
+</div>
