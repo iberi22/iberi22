@@ -1,23 +1,32 @@
 # Sebastián Belalcázar — @iberi22 👋
 
-**Founder & Principal Engineer @ [SouthWest AI Labs](https://github.com/southwest-ai-labs) (SWAL)** — laboratorio open-source que construye **infraestructura de IA local-first y privacy-first**.
+**Full-stack developer & AI engineer** · Fundador de [SouthWest AI Labs](https://github.com/southwest-ai-labs) (SWAL) ·
+Construyo **infraestructura de IA local-first y privacy-first** de principio a fin: backend (Rust), móvil (Flutter) y web (TypeScript/Svelte).
 
-Rust · Dart/Flutter · TypeScript · Svelte/Astro · Python · NixOS · PostgreSQL
+`Rust` · `Dart/Flutter` · `TypeScript` · `Svelte/Astro` · `Python` · `NixOS` · `PostgreSQL`
 
 ---
 
-## 🌎 SouthWest AI Labs — el fin del laboratorio
+## 🌎 SouthWest AI Labs (SWAL) — la idea central
 
-**SWAL existe para devolver la soberanía digital a las personas.** Nuestra tesis: *la IA debería correr en tu dispositivo, no en el data center de otro*. Construimos la infraestructura abierta para que los agentes de IA sean **privados por diseño** (tus datos no salen de tu control), **portables** (sin lock-in de nube) y **soberanos** (el código y tus datos siguen siendo tuyos aunque el laboratorio desaparezca).
+> **La IA debería vivir en TU dispositivo, no en el data center de otra empresa.**
 
-Construimos 4 capas que comparten todas las apps del ecosistema:
+SWAL es mi laboratorio open-source. La idea central es simple: hoy tus datos y tu IA dependen de nubes ajenas — se suben, se venden, se pierden. Nosotros construimos la alternativa:
 
-- 🧠 **Memoria agentic** — [Xavier](https://github.com/iberi22/xavier): agentes con memoria persistente (RAG, grafos de creencias) que no olvidan el contexto entre sesiones.
-- 🌐 **Malla P2P** — [edge-mesh](https://github.com/iberi22/edge-mesh): sincronización offline-first entre tus dispositivos sin pasar por la nube.
-- 🤖 **Runtime de agentes** — [swal-agent-runner](https://github.com/iberi22/swal-agent-runner): ejecución local de agentes autónomos; [gestalt](https://github.com/iberi22/gestalt) los orquesta.
-- 🎨 **Design system** — [@swal/ui](https://github.com/iberi22/swal-ui): una sola identidad visual para todo el ecosistema.
+- 🏠 **Local-first** — la IA corre en tu teléfono o computador y funciona incluso sin internet.
+- 🔐 **Privacy-first** — tus datos no salen de tu control; no hay exfiltración posible.
+- 🕊️ **Soberana** — todo es código abierto (AGPL-3.0) y portable: si el laboratorio desapareciera, tu código y tus datos siguen siendo tuyos.
 
-Sobre esa base, **apps con impacto real**: educación, salud, comercio local, mantenimiento industrial y veeduría ciudadana. Todo open source (AGPL-3.0 apps · MIT librerías), sin suscripciones que te encierren.
+Para lograrlo, el laboratorio mantiene **4 capas compartidas** que usan todas las apps:
+
+| Capa | Proyecto | Qué resuelve |
+|---|---|---|
+| 🧠 Memoria agentic | [Xavier](https://github.com/iberi22/xavier) | Agentes con memoria persistente que no olvidan el contexto |
+| 🌐 Red P2P | [edge-mesh](https://github.com/iberi22/edge-mesh) | Sincronizar tus dispositivos sin pasar por la nube |
+| 🤖 Runtime de agentes | [swal-agent-runner](https://github.com/iberi22/swal-agent-runner) + [gestalt](https://github.com/iberi22/gestalt) | Ejecutar y orquestar agentes autónomos de forma local |
+| 🎨 Design system | [@swal/ui](https://github.com/iberi22/swal-ui) | Una sola identidad visual para todo el ecosistema |
+
+Sobre esas capas se construyen **apps con impacto real**: educación accesible, salud privada, comercio local, mantenimiento industrial y veeduría ciudadana.
 
 ---
 
@@ -55,7 +64,6 @@ Sobre esa base, **apps con impacto real**: educación, salud, comercio local, ma
 | **CookTie** — recetas y cocina. *Resuelve: organizar recetas y compras de cocina.* | 🔒 | — | [Issues](https://github.com/iberi22/cooktie/issues) | [Docs](https://github.com/iberi22/cooktie/tree/main/docs) | [Repo](https://github.com/iberi22/cooktie) |
 | **Vita** — salud personal. *Resuelve: seguimiento de salud sin vender tus datos.* | 🔒 | — | [Issues](https://github.com/iberi22/vita/issues) | [Docs](https://github.com/iberi22/vita/tree/main/docs) | [Repo](https://github.com/iberi22/vita) |
 | **Cerebro** — IA personal. *Resuelve: un asistente que vive en tu dispositivo.* | 🔒 | — | [Issues](https://github.com/iberi22/cerebro/issues) | [Docs](https://github.com/iberi22/cerebro/tree/main/docs) | [Repo](https://github.com/iberi22/cerebro) |
-| **UltraInstincts** — app Flutter. *Resuelve: [en definición].* | 🔒 | — | [Issues](https://github.com/iberi22/ultrainstincts/issues) | — | [Repo](https://github.com/iberi22/ultrainstincts) |
 | **Personal Assistant** — asistente familiar (compras, comidas, finanzas, hábitos). *Resuelve: coordinar la vida del hogar en un solo lugar.* | 🔒 | — | [Issues](https://github.com/iberi22/personal-assistant/issues) | — | [Repo](https://github.com/iberi22/personal-assistant) |
 | **Basket Manager** — gestión de compras profesional. *Resuelve: listas y compras de supermercado sin fricción.* | 🔒 | — | [Issues](https://github.com/iberi22/basket-manager/issues) | — | [Repo](https://github.com/iberi22/basket-manager) |
 | **El Mundo de las Materas** — sitio de la marca MiMatera. *Resuelve: presencia web para el negocio de materas.* | 🔒 | — | [Issues](https://github.com/iberi22/elmundodelasmateras/issues) | [Docs](https://github.com/iberi22/elmundodelasmateras/tree/master/docs) | [Repo](https://github.com/iberi22/elmundodelasmateras) |
@@ -69,7 +77,6 @@ Sobre esa base, **apps con impacto real**: educación, salud, comercio local, ma
 | **VibroMonitor** — IoT de monitoreo de vibraciones industriales. *Resuelve: mantenimiento predictivo para evitar paradas de planta.* | 🔒 | — | [Issues](https://github.com/iberi22/vibromonitor/issues) | — | [Repo](https://github.com/iberi22/vibromonitor) |
 | **OrionHealth** — asistente de salud privacy-first con SSI on-device. *Resuelve: salud con tus datos en tu dispositivo, no en la nube.* | 🔓 | — | [Issues](https://github.com/iberi22/OrionHealth/issues) | [Docs](https://github.com/iberi22/OrionHealth/tree/main/docs) | [Repo](https://github.com/iberi22/OrionHealth) |
 | **GOS** — estándar abierto gastronómico. *Resuelve: documentar recetas de forma estructurada e interoperable.* | 🔓 | — | [Issues](https://github.com/iberi22/gastronomic-open-standard-GOS/issues) | [Docs](https://github.com/iberi22/gastronomic-open-standard-GOS/tree/main/docs) | [Repo](https://github.com/iberi22/gastronomic-open-standard-GOS) |
-| **TriPro Landing** — landing privada. *Resuelve: [uso interno].* | 🔒 | — | [Issues](https://github.com/iberi22/tripro_landing_page_astro/issues) | [Docs](https://github.com/iberi22/tripro_landing_page_astro/tree/main/docs) | [Repo](https://github.com/iberi22/tripro_landing_page_astro) |
 
 ### 🧠 Cores & infraestructura (compartidos por todas las apps)
 
@@ -121,9 +128,9 @@ Sobre esa base, **apps con impacto real**: educación, salud, comercio local, ma
 | **awesome-low-latency-skills** — recursos de low-latency. *Resuelve: aprender programación de baja latencia curada.* | 🔓 | — | [Issues](https://github.com/iberi22/awesome-low-latency-skills/issues) | — | [Repo](https://github.com/iberi22/awesome-low-latency-skills) |
 | **awesome-os-skills** — recursos de diseño de OS. *Resuelve: aprender sistemas operativos con material curado.* | 🔓 | — | [Issues](https://github.com/iberi22/awesome-os-skills/issues) | — | [Repo](https://github.com/iberi22/awesome-os-skills) |
 
-### 📦 Experimental / scripts / archivo
+### 🧪 Experimental / en definición
 
-`DePIN` · `cortex` · `pilot` · `synmem` · `MCP-RAG` · `gos-p2p-data` · `video-ai-manager-advanced` · `obsidian-vault` · `xavier-linkedin-agent` · `swal-openclaw-backup` · `cortex-tests` · `AegisFlow` · `chekflow-open-core` · `jamstack-admin` · `Admin` · `agents-flows-recipes` · `bestof-opensorce` · `bestof-pipeline` · `ui-tikpro-template` · `antivirusSystemimproves-MCP` · `SWAL-Operations-Dashboard` · `termux-dev-setup` · `termux-dev-nvim-agents` · `scrcpy-win64-v3.3.2` · `Eva-The-edge` · `scripts` · `sublimetext_conf` · `temp-codex-togaf` · `PhotoscantodeleteScript` · `wallesperdidasScript` · `gestalt-merge-work`
+Proyectos en fase exploratoria o sin foco definido (se listan por transparencia): `DePIN` · `cortex` · `pilot` · `synmem` · `MCP-RAG` · `gos-p2p-data` · `video-ai-manager-advanced` · `obsidian-vault` · `xavier-linkedin-agent` · `swal-openclaw-backup` · `cortex-tests` · `AegisFlow` · `chekflow-open-core` · `jamstack-admin` · `Admin` · `agents-flows-recipes` · `bestof-opensorce` · `bestof-pipeline` · `ui-tikpro-template` · `antivirusSystemimproves-MCP` · `SWAL-Operations-Dashboard` · `termux-dev-setup` · `termux-dev-nvim-agents` · `scrcpy-win64-v3.3.2` · `Eva-The-edge` · `scripts` · `sublimetext_conf` · `temp-codex-togaf` · `PhotoscantodeleteScript` · `wallesperdidasScript` · `gestalt-merge-work` · `ultrainstincts` · `tripro_landing_page_astro`
 
 ---
 
@@ -147,7 +154,6 @@ Sobre esa base, **apps con impacto real**: educación, salud, comercio local, ma
 
 ## 🔗 Find me
 
-- **Lab:** [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs)
-- **Sitio del lab:** [iberi22.github.io/iberi22](https://iberi22.github.io/iberi22)
+- **Lab:** [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs) · **Sitio del lab:** [iberi22.github.io/iberi22](https://iberi22.github.io/iberi22)
 - **Portfolio personal:** [portfolio-iberi22.vercel.app](https://portfolio-iberi22.vercel.app)
-- **Telegram:** [@BeRi0n3](https://t.me/BeRi0n3)
+- **Telegram:** [@BeRi0n3](https://t.me/BeRi0n3) — abierto a colaboraciones, roles y proyectos con impacto real.
