@@ -1,31 +1,10 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff41,100:0066ff&height=200&section=header&text=SWAL&fontSize=60&fontColor=ffffff&animation=fadeIn" width="100%" />
-</div>
+# iberi22 — GitHub Profile
 
-<br />
+Este repositorio aloja mi perfil de GitHub y el sitio portfolio.
 
-> Your profile README is at [`profile/README.md`](profile/README.md). This file is the repo root readme.
+- **Perfil de GitHub (lo que ves en github.com/iberi22):** [`profile/README.md`](profile/README.md) — portafolio completo de todas las apps de SouthWest AI Labs, con enlaces a demo, backlog, documentación y repo.
+- **Sitio portfolio (Astro):** `src/` — en construcción.
 
-<br />
+---
 
-```yaml
-# iberi22/iberi22 — GitHub Profile Repo
-# Southwest AI Labs (SWAL)
-# Soberanía de la información · Web3 · Código abierto
-```
-
-## 📁 Repo Structure
-
-```
-├── profile/README.md   ← Your GitHub Profile README (shows on github.com/iberi22)
-├── github-profile/     ← Legacy profile card (deprecated)
-├── src/                ← Astro portfolio site
-├── public/             ← Static assets
-├── swal-hacker/        ← SWAL style assets
-├── docs/               ← SRC/SRS documentation
-└── .gitcore/           ← GitCore protocol files
-```
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0066ff,100:00ff41&height=80&section=footer" width="100%" />
-</div>
+*Southwest AI Labs — Portfolio de proyectos open source*
