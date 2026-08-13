@@ -91,8 +91,17 @@ const openSourceProjects = [
       </h1>
 
       <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-        Laboratory developing intelligent agents with infinite memory, open protocols, and industrial IoT solutions.
+        Building <span class="text-slate-200 font-semibold">local-first, privacy-first AI</span>: agents that live on
+        <span class="text-slate-200 font-semibold">your device</span> — not in someone else's data center.
       </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-10">
+        {["🏠 Local-first", "🔐 Privacy-first", "🕊️ Open source", "🤖 Agentic"].map((t) => (
+          <span class="px-4 py-1.5 bg-slate-900/80 border border-slate-700 rounded-full text-slate-300 text-sm font-medium">
+            {t}
+          </span>
+        ))}
+      </div>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="#projects" class="btn-primary flex items-center gap-2">
@@ -192,6 +201,12 @@ const openSourceProjects = [
         <blockquote class="text-slate-300 text-lg leading-relaxed italic border-l-4 border-blue-500 pl-6 text-left">
           "La premisa principal es la comodidad de todos los seres humanos en la Tierra, brindando tecnología segura, abierta e inteligente."
         </blockquote>
+
+        <p class="text-slate-400 mt-6 leading-relaxed text-left">
+          <strong class="text-slate-200">SouthWest AI Labs (SWAL)</strong> construye la infraestructura abierta para que la IA
+          corra en tu dispositivo: memoria agentic, redes P2P y runtimes de agentes — todo open source,
+          sin lock-in de nube y con soberanía total sobre tus datos.
+        </p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
