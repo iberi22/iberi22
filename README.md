@@ -1,5 +1,9 @@
 # Sebastián Belalcázar — @iberi22 👋
 
+[![Open to work](https://img.shields.io/badge/Open%20to%20work-Yes-brightgreen?style=flat-square)](https://www.linkedin.com/in/brahyansbr)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-in%2Fbrahyansbr-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brahyansbr)
+[![Read in English](https://img.shields.io/badge/Read%20in-English-4285F4?style=flat-square)](README.en.md)
+
 **Full-stack developer & AI engineer** · Fundador de [SouthWest AI Labs](https://github.com/southwest-ai-labs) (SWAL) ·
 Construyo **infraestructura de IA local-first y privacy-first** de principio a fin: backend (Rust), móvil (Flutter) y web (TypeScript/Svelte).
 
@@ -156,4 +160,5 @@ Proyectos en fase exploratoria o sin foco definido (se listan por transparencia)
 
 - **Lab:** [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs) · **Sitio del lab:** [iberi22.github.io/iberi22](https://iberi22.github.io/iberi22)
 - **Portfolio personal:** [portfolio-iberi22.vercel.app](https://portfolio-iberi22.vercel.app)
+- **LinkedIn:** [in/brahyansbr](https://www.linkedin.com/in/brahyansbr)
 - **Telegram:** [@BeRi0n3](https://t.me/BeRi0n3) — abierto a colaboraciones, roles y proyectos con impacto real.
