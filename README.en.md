@@ -11,46 +11,55 @@ I build **local-first, privacy-first AI infrastructure** end to end: backend (Ru
 
 ---
 
-## 🌎 SouthWest AI Labs (SWAL) — the core idea
+## 🌎 SouthWest AI Labs (SWAL) — the core idea and the GOAL
 
 > **AI should live on YOUR device, not in someone else's data center.**
 
-SWAL is my open-source lab, founded and maintained by me. The core idea: today your data and your AI depend on someone else's cloud; I build the alternative:
+SWAL is an open-source lab founded and maintained by me. The lab's GOAL, in one sentence:
+
+> **SWAL is a network of agentic applications with their own node, shared memory, a data mesh and people-owned value — no paid subscriptions for full access.**
+
+What it means in practice:
 
 - 🏠 **Local-first** — AI runs on your phone or computer and works even offline.
 - 🔐 **Privacy-first** — your data never leaves your control; no exfiltration possible.
 - 🕊️ **Sovereign** — open source (AGPL-3.0) and portable: if the lab disappeared, your code and your data would still be yours.
+- 🔗 **A network, not isolated apps** — every application is a node of the SWAL network: they share memory (Xavier), sync data through the mesh (edge-mesh, CRDT without central servers) and talk to each other.
+- 🆓 **No paywall** — "Pro" value is network capacity (running your own active node), never a subscription.
 
-To achieve this, the lab maintains **4 shared layers** used by every app:
+### The architecture: 4 shared layers
 
 | Layer | Project | What it solves |
 |---|---|---|
 | 🧠 Agentic memory | Xavier | Agents with persistent memory that never forget context |
-| 🌐 P2P network | edge-mesh | Sync your devices without going through the cloud |
+| 🌐 P2P network (mesh) | edge-mesh | Sync your devices without going through the cloud — the network's data plane |
 | 🤖 Agent runtime | [swal-agent-runner](https://github.com/iberi22/swal-agent-runner) + [gestalt](https://github.com/iberi22/gestalt) | Run and orchestrate autonomous agents locally |
 | 🎨 Design system | [@swal/ui](https://github.com/iberi22/swal-ui) | One visual identity for the whole ecosystem |
 
-> The network and memory layers are under **controlled access until launch** (request via [Telegram](https://t.me/BeRi0n3)); the rest of the ecosystem lives at [github.com/iberi22](https://github.com/iberi22).
+### 🔐 Repo access — by invitation
+
+Until **the mesh (edge-mesh) connects every app in the ecosystem**, repos stay under **controlled, invitation-based access**: demos are public and working, and the code opens up as the network completes. Request access via [Telegram](https://t.me/BeRi0n3) or [LinkedIn](https://www.linkedin.com/in/brahyansbr).
 
 ---
 
 ## 🏆 Star projects
 
-> Each project with its 4 access links: **🌐 Demo** (view it live) · **📋 Backlog** (issues) · **📚 Docs** · **📦 Repo**.
+> **Vis:** 🔒 invitation access (backlog and docs via invitation) · 🔓 public.
+> Each project with: **🌐 Demo** (view it live) · **📋 Backlog** · **📚 Docs** · **📦 Repo**.
 
 | Project | Stack | Vis | 🌐 Demo | 📋 Backlog | 📚 Docs | 📦 Repo |
 |---|---|---|---|---|---|---|
-| **SaberParaTodos** (WorldExams) — practice exams for 16+ countries. *Solves: free, accessible academic preparation.* | Astro·Svelte·TS | 🔒 | [Live](https://saberparatodos.space) | [Issues](https://github.com/iberi22/worldexams/issues) | [Docs](https://github.com/iberi22/worldexams/tree/main/docs) | [Repo](https://github.com/iberi22/worldexams) |
-| **Shelf** — offline-first inventory + POS with P2P sync (CRDT). *Solves: selling without stable internet or an expensive cash register.* | React 19·TS | 🔒 | [Live](https://shelf-inventory.vercel.app) | [Issues](https://github.com/iberi22/shelf/issues) | [Docs](https://github.com/iberi22/shelf/tree/main/docs) | [Repo](https://github.com/iberi22/shelf) |
+| **SaberParaTodos** (WorldExams) — practice exams for 16+ countries. *Solves: free, accessible academic preparation.* | Astro·Svelte·TS | 🔒 | [Live](https://saberparatodos.space) | — | — | [Invitation](https://t.me/BeRi0n3) |
+| **Shelf** — offline-first inventory + POS with P2P sync (CRDT). *Solves: selling without stable internet or an expensive cash register.* | React 19·TS | 🔒 | [Live](https://shelf-inventory.vercel.app) | — | — | [Invitation](https://t.me/BeRi0n3) |
 | **Isar Agent Memory** — Dart agent memory (graphs, embeddings). *Solves: offline-first memory for Flutter apps.* | Dart | 🔓 | [pub.dev](https://pub.dev/packages/isar_agent_memory) | [Issues](https://github.com/iberi22/isar_agent_memory/issues) | [Docs](https://github.com/iberi22/isar_agent_memory/tree/main/docs) | [Repo](https://github.com/iberi22/isar_agent_memory) |
-| **Hosteler-IA** — field service management (FSM) with AI and offline. *Solves: coordinating technicians and work orders in the field.* | TS·React | 🔒 | [Live](https://hosteler-ia-mu.vercel.app) | [Issues](https://github.com/iberi22/hosteler-ia/issues) | [Docs](https://github.com/iberi22/hosteler-ia/tree/development/docs) | [Repo](https://github.com/iberi22/hosteler-ia) |
-| **MiMatera** — PWA catalog of planters with photos and one-time-use tokens. *Solves: digitizing a local business.* | PWA·JS | 🔒 | [Live](https://mimatera-catalogador.pages.dev) | local | local | local |
+| **Hosteler-IA** — field service management (FSM) with AI and offline. *Solves: coordinating technicians and work orders in the field.* | TS·React | 🔒 | [Live](https://hosteler-ia-mu.vercel.app) | — | — | [Invitation](https://t.me/BeRi0n3) |
+| **MiMatera** — PWA catalog of planters with photos and one-time-use tokens. *Solves: digitizing a local business.* | PWA·JS | 🔒 | [Live](https://mimatera-catalogador.pages.dev) | — | — | local |
 | **OrionHealth** — privacy-first health assistant with on-device SSI. *Solves: health with your data on your device.* | Flutter·Dart | 🔓 | — | [Issues](https://github.com/iberi22/OrionHealth/issues) | [Docs](https://github.com/iberi22/OrionHealth/tree/main/docs) | [Repo](https://github.com/iberi22/OrionHealth) |
-| **TikTokBoost** — TikTok content & analytics manager. *Solves: planning and measuring content without costly tools.* | TS | 🔒 | [Live](https://tiktboost.vercel.app) | [Issues](https://github.com/iberi22/tiktboost/issues) | [Docs](https://github.com/iberi22/tiktboost/tree/main/docs) | [Repo](https://github.com/iberi22/tiktboost) |
+| **TikTokBoost** — TikTok content & analytics manager. *Solves: planning and measuring content without costly tools.* | TS | 🔒 | [Live](https://tiktboost.vercel.app) | — | — | [Invitation](https://t.me/BeRi0n3) |
 | **GOS** — open gastronomic standard. *Solves: documenting recipes in a structured, interoperable way.* | Astro | 🔓 | — | [Issues](https://github.com/iberi22/gastronomic-open-standard-GOS/issues) | [Docs](https://github.com/iberi22/gastronomic-open-standard-GOS/tree/main/docs) | [Repo](https://github.com/iberi22/gastronomic-open-standard-GOS) |
-| **Personal Portfolio** — my personal site & projects. | Svelte | 🔒 | [Live](https://portfolio-iberi22.vercel.app) | [Issues](https://github.com/iberi22/portfolio-iberi22/issues) | — | [Repo](https://github.com/iberi22/portfolio-iberi22) |
+| **Personal Portfolio** — my personal site & projects. | Svelte | 🔒 | [Live](https://portfolio-iberi22.vercel.app) | — | — | [Invitation](https://t.me/BeRi0n3) |
 
-### 🌱 In development — upcoming releases
+### 🌱 In development — upcoming network releases
 
 `ManteniApp` · `Veedur-IA` · `Gara-G` · `Nido` · `Software Factory` · `SWAL Agent Runner` · `Core SWAL PWA` · `Personal Assistant` · `Preun-IA` · `saber-proactivo` — and more at [github.com/iberi22](https://github.com/iberi22).
 
@@ -67,9 +76,9 @@ To achieve this, the lab maintains **4 shared layers** used by every app:
 
 ## 🔧 How to maintain this format
 
-1. **New star project** → add a row with its 4 links (`repo/issues` = backlog, `repo/tree/<branch>/docs` = docs, repo = code, live URL = demo).
+1. **New star project** → add a row with demo + links (public: backlog/docs/repo · private: invitation).
 2. **Demo ready** → move the project to the main table.
-3. **Public launch** → change 🔒 to 🔓.
+3. **Mesh complete / launch** → change 🔒 to 🔓 and fill in the links.
 4. Keep URLs verified (a `curl -I` before pushing changes). No README link should return 404.
 
 ## 🔗 Find me
