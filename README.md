@@ -85,5 +85,6 @@ Hasta que **el mesh (edge-mesh) conecte todas las apps del ecosistema**, los rep
 
 - **Lab:** [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs) · **Sitio del lab:** [iberi22.github.io/iberi22](https://iberi22.github.io/iberi22)
 - **Portfolio personal:** [portfolio-iberi22.vercel.app](https://portfolio-iberi22.vercel.app)
+- **CV (1 página):** [CV-Brahyam-Belalcazar.pdf](docs/CV-Brahyam-Belalcazar.pdf)
 - **LinkedIn:** [in/brahyansbr](https://www.linkedin.com/in/brahyansbr)
 - **Telegram:** [@BeRi0n3](https://t.me/BeRi0n3) — abierto a colaboraciones, roles y proyectos con impacto real.
