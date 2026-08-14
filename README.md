@@ -15,9 +15,9 @@ Construyo **infraestructura de IA local-first y privacy-first** de principio a f
 
 > **La IA debería vivir en TU dispositivo, no en el data center de otra empresa.**
 
-SWAL es un laboratorio open-source fundado y mantenido por mí. El GOAL del laboratorio, en una frase:
+SWAL es un laboratorio open-source fundado y mantenido por mí. La misión del laboratorio:
 
-> **SWAL es una red de aplicaciones agentic con nodo propio, memoria compartida, mesh de datos y propiedad de las personas — sin suscripciones de pago para el acceso completo.**
+> **SouthWest AI Labs es un laboratorio de ideas para soluciones con integración comunitaria. Nuestra misión: darle a todos acceso a herramientas de última tecnología para diseñar sistemas de información que mejoren la calidad de vida. Aceleramos sistemas que brindan calidad de vida a las personas.**
 
 Qué significa en la práctica:
 
@@ -50,11 +50,10 @@ Hasta que **el mesh (edge-mesh) conecte todas las apps del ecosistema**, los rep
 | Proyecto | Stack | Vis | 🌐 Demo | 📋 Backlog | 📚 Docs | 📦 Repo |
 |---|---|---|---|---|---|---|
 | **SaberParaTodos** (WorldExams) — exámenes de práctica para 16+ países. *Resuelve: preparación académica gratuita y accesible.* | Astro·Svelte·TS | 🔒 | [Live](https://saberparatodos.space) | — | — | [Invitación](https://t.me/BeRi0n3) |
-| **Shelf** — inventario + POS offline-first con sync P2P (CRDT). *Resuelve: vender sin internet estable ni caja costosa.* | React 19·TS | 🔒 | [Live](https://shelf-inventory.vercel.app) | — | — | [Invitación](https://t.me/BeRi0n3) |
+| **Shelf** — inventario + POS offline-first con sync P2P (CRDT). *Resuelve: vender sin internet estable ni caja costosa.* | React 19·TS | 🔒 | [Live](https://estante-inventario.vercel.app) | — | — | [Invitación](https://t.me/BeRi0n3) |
 | **Isar Agent Memory** — memoria de agente en Dart (grafos, embeddings). *Resuelve: memoria offline-first para apps Flutter.* | Dart | 🔓 | [pub.dev](https://pub.dev/packages/isar_agent_memory) | [Issues](https://github.com/iberi22/isar_agent_memory/issues) | [Docs](https://github.com/iberi22/isar_agent_memory/tree/main/docs) | [Repo](https://github.com/iberi22/isar_agent_memory) |
 | **Hosteler-IA** — gestión de servicios de campo (FSM) con IA y offline. *Resuelve: coordinar técnicos y órdenes en terreno.* | TS·React | 🔒 | [Live](https://hosteler-ia-mu.vercel.app) | — | — | [Invitación](https://t.me/BeRi0n3) |
-| **MiMatera** — catálogo PWA de materas con fotos y tokens de un solo uso. *Resuelve: digitalizar un negocio local.* | PWA·JS | 🔒 | [Live](https://mimatera-catalogador.pages.dev) | — | — | local |
-| **OrionHealth** — asistente de salud privacy-first con SSI on-device. *Resuelve: salud con tus datos en tu dispositivo.* | Flutter·Dart | 🔓 | — | [Issues](https://github.com/iberi22/OrionHealth/issues) | [Docs](https://github.com/iberi22/OrionHealth/tree/main/docs) | [Repo](https://github.com/iberi22/OrionHealth) |
+| **OrionHealth** — asistente de salud privacy-first con SSI on-device. *Resuelve: salud con tus datos en tu dispositivo.* | Flutter·Dart | 🔓 | [Demo](https://iberi22.github.io/OrionHealth/) | [Issues](https://github.com/iberi22/OrionHealth/issues) | [Docs](https://github.com/iberi22/OrionHealth/tree/main/docs) | [Repo](https://github.com/iberi22/OrionHealth) |
 | **TikTokBoost** — gestor de contenido y métricas TikTok. *Resuelve: planificar y medir contenido sin herramientas caras.* | TS | 🔒 | [Live](https://tiktboost.vercel.app) | — | — | [Invitación](https://t.me/BeRi0n3) |
 | **GOS** — estándar abierto gastronómico. *Resuelve: documentar recetas de forma estructurada e interoperable.* | Astro | 🔓 | — | [Issues](https://github.com/iberi22/gastronomic-open-standard-GOS/issues) | [Docs](https://github.com/iberi22/gastronomic-open-standard-GOS/tree/main/docs) | [Repo](https://github.com/iberi22/gastronomic-open-standard-GOS) |
 | **Portfolio Personal** — mi web personal y de proyectos. | Svelte | 🔒 | [Live](https://portfolio-iberi22.vercel.app) | — | — | [Invitación](https://t.me/BeRi0n3) |
