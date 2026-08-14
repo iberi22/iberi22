@@ -73,12 +73,13 @@ Hasta que **el mesh (edge-mesh) conecte todas las apps del ecosistema**, los rep
 | Paquete publicado | [isar_agent_memory](https://pub.dev/packages/isar_agent_memory) en pub.dev |
 | Licencias | AGPL-3.0 apps · MIT librerías |
 
-## 🔧 Cómo mantener este formato
-
-1. **Nuevo proyecto estrella** → añade una fila con demo + enlaces (público: backlog/docs/repo · privado: invitación).
+<!-- ## 
+🔧 Cómo mantener este formato1. **Nuevo proyecto estrella** → añade una fila con demo + enlaces (público: backlog/docs/repo · privado: invitación).
 2. **Demo lista** → mueve el proyecto a la tabla principal.
 3. **Mesh completo / lanzamiento** → cambia 🔒 por 🔓 y completa los enlaces.
 4. Mantén las URLs verificadas (un `curl -I` antes de subir cambios). Ningún enlace del README debe dar 404.
+
+-->
 
 ## 🔗 Find me
 
