@@ -1,10 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+/* ============================================================
+   SWAL LAB — Design System
+   Dark-first · Space Grotesk display · IBM Plex Mono labels
+   Single accent: cyan (edge-hive) · Zero text gradients
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
+  --bg: #0a0a0b;
+  --surface: #111113;
+  --surface-2: #161618;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #f4f4f5;
+  --muted: #a1a1aa;
+  --accent: #22d3ee;
+  --accent-dim: rgba(34, 211, 238, 0.12);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -13,23 +28,145 @@ html {
 }
 
 body {
-  @apply bg-slate-950 text-white antialiased;
+  @apply bg-[#0a0a0b] text-[#f4f4f5] antialiased;
+  font-feature-settings: 'ss01' on, 'cv01' on;
 }
 
-@layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500;
-  }
+::selection {
+  background: rgba(34, 211, 238, 0.25);
+  color: #f4f4f5;
+}
 
-  .card-hover {
-    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/10;
-  }
+/* ---------- Display type ---------- */
+.font-display {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  letter-spacing: -0.03em;
+}
 
-  .btn-primary {
-    @apply px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-colors duration-200;
-  }
+.font-mono {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
 
-  .btn-secondary {
-    @apply px-6 py-3 border border-slate-600 hover:border-slate-400 text-white font-semibold rounded-lg transition-colors duration-200;
-  }
+/* ---------- Section eyebrow (lab label) ---------- */
+.eyebrow {
+  @apply font-mono text-xs uppercase tracking-[0.25em] text-[#22d3ee];
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Card hover glow ---------- */
+.card-glow {
+  @apply border rounded-xl transition-all duration-200;
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+.card-glow:hover {
+  border-color: rgba(34, 211, 238, 0.35);
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.12), 0 8px 40px -12px rgba(34, 211, 238, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ---------- Live dot ---------- */
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--accent);
+  box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.6);
+  animation: live-pulse 2.4s infinite;
+}
+
+@keyframes live-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.55); }
+  70% { box-shadow: 0 0 0 8px rgba(34, 211, 238, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
+}
+
+/* ---------- Infinite marquee ---------- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ---------- Bento ---------- */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.bento-cell {
+  @apply card-glow p-6 flex flex-col;
+  min-height: 180px;
+}
+
+@media (min-width: 768px) {
+  .bento-lg { grid-column: span 4; }
+  .bento-sm { grid-column: span 2; }
+  .bento-2 { grid-column: span 3; }
+}
+
+@media (max-width: 767px) {
+  .bento-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-200;
+  background: var(--accent);
+  color: #041014;
+}
+
+.btn-primary:hover {
+  background: #67e8f9;
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-200;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: var(--surface-2);
+}
+
+/* ---------- Nav link ---------- */
+.nav-link {
+  @apply text-sm text-[#a1a1aa] hover:text-[#f4f4f5] transition-colors duration-200;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .marquee-track { animation: none; }
+  .live-dot { animation: none; }
 }

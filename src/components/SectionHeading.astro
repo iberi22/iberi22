@@ -1,0 +1,22 @@
+---
+/**
+ * SectionHeading.astro — eyebrow mono + título display + subtítulo.
+ */
+import Reveal from './Reveal.astro';
+
+interface Props {
+  index: string;
+  title: string;
+  subtitle?: string;
+}
+
+const { index, title, subtitle } = Astro.props;
+---
+
+<Reveal>
+  <div class="text-center mb-16">
+    <p class="eyebrow mb-4">// LAB · {index}</p>
+    <h2 class="font-display text-4xl sm:text-5xl font-bold text-[#f4f4f5] mb-5">{title}</h2>
+    {subtitle && <p class="text-[#a1a1aa] text-lg max-w-2xl mx-auto leading-relaxed">{subtitle}</p>}
+  </div>
+</Reveal>

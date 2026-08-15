@@ -1,6 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ProjectCard from '../components/ProjectCard.astro';
+import Reveal from '../components/Reveal.astro';
+import Marquee from '../components/Marquee.astro';
+import NeuralBackground from '../components/NeuralBackground.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import BentoCard from '../components/BentoCard.astro';
+import Stat from '../components/Stat.astro';
 import '../styles/global.css';
 
 const featuredProjects = [
@@ -9,7 +14,7 @@ const featuredProjects = [
     repo: "iberi22/worldexams",
     url: "https://saberparatodos.space",
     tech: "Astro, Svelte, TailwindCSS, Supabase",
-    description: "Exámenes de práctica para 16+ países. Educación gratuita y accesible.",
+    description: "Exámenes de práctica para 16+ países. Educación gratuita y accesible para todos.",
     featured: true,
   },
   {
@@ -34,7 +39,6 @@ const featuredProjects = [
     url: "https://mimatera-catalogador.pages.dev",
     tech: "PWA, JavaScript",
     description: "Catálogo PWA de materas con fotos y tokens de un solo uso.",
-    featured: true,
   },
   {
     title: "TikTokBoost",
@@ -42,7 +46,6 @@ const featuredProjects = [
     url: "https://tiktboost.vercel.app",
     tech: "TypeScript",
     description: "Gestor de contenido y métricas TikTok.",
-    featured: true,
   },
   {
     title: "OrionHealth",
@@ -50,7 +53,6 @@ const featuredProjects = [
     url: "https://github.com/iberi22/OrionHealth",
     tech: "Flutter, Dart",
     description: "Asistente de salud privacy-first con SSI on-device y estándares médicos offline.",
-    featured: true,
   },
 ];
 
@@ -68,221 +70,247 @@ const openSourceProjects = [
   { title: "SWAL Agent Rust", repo: "iberi22/swal-agent-rust" },
   { title: "WebAuditMCP", repo: "iberi22/WebAuditMCP" },
 ];
+
+const stack = ["Rust", "TypeScript", "Astro", "Python", "Flutter", "React", "PostgreSQL", "Supabase", "P2P", "WebAssembly", "Svelte", "TailwindCSS"];
 ---
 
 <Layout>
-  <!-- Hero Section -->
+  <!-- ============ HERO ============ -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Background gradient orbs -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute top-1/4 -left-32 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
-    </div>
+    <NeuralBackground />
 
-    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-2 bg-slate-900/80 border border-slate-700 rounded-full text-sm text-slate-300 mb-8">
-        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-        Open Source First
-      </div>
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-20">
+      <Reveal>
+        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-white/[0.08] bg-[#111113] mb-10">
+          <span class="live-dot"></span>
+          <span class="font-mono text-xs text-[#a1a1aa] tracking-wide">Open Source First</span>
+        </div>
+      </Reveal>
 
-      <h1 class="text-5xl sm:text-6xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight">
-        Southwest<br />
-        <span class="text-gradient">AI Labs</span>
-      </h1>
+      <Reveal delay={100}>
+        <h1 class="font-display text-6xl sm:text-7xl md:text-8xl font-bold text-[#f4f4f5] mb-8 tracking-tight leading-[1.02]">
+          SouthWest<br />
+          <span class="text-[#22d3ee]">AI Labs</span>
+        </h1>
+      </Reveal>
 
-      <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-        Building <span class="text-slate-200 font-semibold">local-first, privacy-first AI</span>: agents that live on
-        <span class="text-slate-200 font-semibold">your device</span> — not in someone else's data center.
-      </p>
+      <Reveal delay={200}>
+        <p class="text-lg sm:text-xl text-[#a1a1aa] max-w-2xl mx-auto mb-12 leading-relaxed">
+          Building <span class="text-[#f4f4f5] font-medium">local-first, privacy-first AI</span>: agents with infinite memory
+          that live on <span class="text-[#f4f4f5] font-medium">your device</span> — not in someone else's data center.
+        </p>
+      </Reveal>
 
-      <div class="flex flex-wrap items-center justify-center gap-3 mb-10">
-        {["🏠 Local-first", "🔐 Privacy-first", "🕊️ Open source", "🤖 Agentic"].map((t) => (
-          <span class="px-4 py-1.5 bg-slate-900/80 border border-slate-700 rounded-full text-slate-300 text-sm font-medium">
-            {t}
-          </span>
-        ))}
-      </div>
+      <Reveal delay={300}>
+        <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+          <a href="#projects" class="btn-primary">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+            </svg>
+            Ver Proyectos
+          </a>
+          <a href="#research" class="btn-secondary">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+            Research
+          </a>
+        </div>
+      </Reveal>
 
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#projects" class="btn-primary flex items-center gap-2">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-          </svg>
-          View Projects
-        </a>
-        <a href="#contact" class="btn-secondary flex items-center gap-2">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-          </svg>
-          Contact
-        </a>
-      </div>
-
-      <!-- Tech badges -->
-      <div class="mt-16 flex flex-wrap items-center justify-center gap-3">
-        {["Rust", "TypeScript", "Astro", "Python", "Flutter", "React", "PostgreSQL", "Supabase"].map((t) => (
-          <span class="px-3 py-1 bg-slate-900 border border-slate-700 rounded-full text-slate-400 text-sm font-medium">
-            {t}
-          </span>
-        ))}
-      </div>
+      <Reveal delay={400}>
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          {["🏠 Local-first", "🔐 Privacy-first", "🕊️ Open source", "🤖 Agentic"].map((t) => (
+            <span class="px-4 py-1.5 rounded-full border border-white/[0.08] bg-[#111113] text-[#a1a1aa] font-mono text-xs">
+              {t}
+            </span>
+          ))}
+        </div>
+      </Reveal>
     </div>
 
     <!-- Scroll indicator -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-      <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-6 h-6 text-[#52525b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
       </svg>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-24 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Featured Projects</h2>
-        <p class="text-slate-400 text-lg max-w-2xl mx-auto">
-          Production-grade software products built by our team.
-        </p>
-      </div>
+  <!-- ============ MARQUEE ============ -->
+  <Marquee items={stack} />
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {featuredProjects.map((project) => (
-          <ProjectCard {...project} />
-        ))}
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section id="projects" class="py-24 px-4 sm:px-6 lg:px-8 scroll-mt-16">
+    <div class="max-w-7xl mx-auto">
+      <SectionHeading
+        index="001"
+        title="Featured Projects"
+        subtitle="Aplicaciones reales, en producción, construidas con la infraestructura del laboratorio."
+      />
+
+      <div class="bento-grid">
+        <BentoCard {...featuredProjects[0]} className="bento-lg" featured />
+        <BentoCard {...featuredProjects[1]} className="bento-sm" />
+        <BentoCard {...featuredProjects[2]} className="bento-sm" />
+        <BentoCard {...featuredProjects[3]} className="bento-2" />
+        <BentoCard {...featuredProjects[4]} className="bento-2" />
+        <BentoCard {...featuredProjects[5]} className="bento-lg" featured />
       </div>
     </div>
   </section>
 
-  <!-- Open Source Section -->
-  <section id="open-source" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+  <!-- ============ OPEN SOURCE ============ -->
+  <section id="open-source" class="py-24 px-4 sm:px-6 lg:px-8 bg-[#0c0c0e] border-y border-white/[0.06] scroll-mt-16">
     <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Open Source</h2>
-        <p class="text-slate-400 text-lg max-w-2xl mx-auto">
-          Open protocols, tools and libraries from our lab.
-        </p>
-      </div>
+      <SectionHeading
+        index="002"
+        title="Open Source"
+        subtitle="Protocolos, herramientas y librerías del laboratorio — todo abierto, sin lock-in."
+      />
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {openSourceProjects.map((project) => (
-          <a
-            href={`https://github.com/${project.repo}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
-          >
-            <div class="flex items-center gap-3 mb-2">
-              <svg class="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              <span class="font-semibold text-white group-hover:text-blue-400 transition-colors">
-                {project.title}
-              </span>
-            </div>
-            <p class="text-slate-500 text-sm font-mono">{project.repo}</p>
-          </a>
+        {openSourceProjects.map((project, i) => (
+          <Reveal delay={(i % 3) * 80}>
+            <a
+              href={`https://github.com/${project.repo}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-glow group flex items-center gap-3 p-5"
+            >
+              <svg class="w-5 h-5 text-[#52525b] group-hover:text-[#22d3ee] transition-colors shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span class="font-display font-medium text-[#f4f4f5] group-hover:text-[#22d3ee] transition-colors">{project.title}</span>
+              <span class="ml-auto font-mono text-[11px] text-[#52525b] hidden lg:block">{project.repo.split('/')[1]}</span>
+            </a>
+          </Reveal>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-24 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Sobre Nosotros</h2>
-      <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-10 rounded-full"></div>
+  <!-- ============ RESEARCH / THESIS ============ -->
+  <section id="research" class="py-24 px-4 sm:px-6 lg:px-8 scroll-mt-16">
+    <div class="max-w-7xl mx-auto">
+      <SectionHeading
+        index="003"
+        title="La Tesis"
+        subtitle="La IA debe correr en tu hardware. Soberanía total sobre tus datos, memoria y agentes."
+      />
 
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 mb-10">
-        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-          <span class="text-white text-2xl font-bold">BB</span>
-        </div>
-        <h3 class="text-2xl font-bold text-white mb-1">Brahyan Belalcazar</h3>
-        <p class="text-blue-400 mb-6">Founder & CEO · Southwest AI Labs</p>
-
-        <blockquote class="text-slate-300 text-lg leading-relaxed italic border-l-4 border-blue-500 pl-6 text-left">
-          "La premisa principal es la comodidad de todos los seres humanos en la Tierra, brindando tecnología segura, abierta e inteligente."
-        </blockquote>
-
-        <p class="text-slate-400 mt-6 leading-relaxed text-left">
-          <strong class="text-slate-200">SouthWest AI Labs (SWAL)</strong> construye la infraestructura abierta para que la IA
-          corra en tu dispositivo: memoria agentic, redes P2P y runtimes de agentes — todo open source,
-          sin lock-in de nube y con soberanía total sobre tus datos.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {[
-          { label: "Projects", value: "16+" },
-          { label: "Open Source Repos", value: "20+" },
-          { label: "Technologies", value: "8+" },
-        ].map((stat) => (
-          <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
-            <div class="text-3xl font-bold text-white mb-1">{stat.value}</div>
-            <div class="text-slate-400 text-sm">{stat.label}</div>
-          </div>
+          {
+            icon: "⌂",
+            title: "Local-first",
+            text: "Modelos, memoria y agentes que operan en tu dispositivo. Sin conexión forzada, sin exfiltración de datos.",
+          },
+          {
+            icon: "🔐",
+            title: "Privacy-first",
+            text: "Cifrado E2E, SSI on-device y almacenamiento que solo guarda bytes cifrados. Tú eres el dueño legítimo de tus datos.",
+          },
+          {
+            icon: "◈",
+            title: "Sovereign",
+            text: "Redes P2P (mesh), tokenomics abiertas y gobernanza transparente. Sin lock-in de nube ni dependencia de terceros.",
+          },
+        ].map((p, i) => (
+          <Reveal delay={i * 100}>
+            <div class="card-glow p-8 h-full">
+              <div class="w-12 h-12 rounded-lg border border-[#22d3ee]/25 bg-[#22d3ee]/10 flex items-center justify-center text-xl text-[#22d3ee] mb-6">
+                {p.icon}
+              </div>
+              <h3 class="font-display text-xl font-semibold text-[#f4f4f5] mb-3">{p.title}</h3>
+              <p class="text-[#a1a1aa] leading-relaxed text-sm">{p.text}</p>
+            </div>
+          </Reveal>
         ))}
+      </div>
+
+      <Reveal delay={150}>
+        <blockquote class="mt-16 max-w-3xl mx-auto text-center">
+          <p class="font-display text-2xl sm:text-3xl font-medium text-[#f4f4f5] leading-snug">
+            "La premisa principal es la comodidad de todos los seres humanos en la Tierra,
+            brindando tecnología segura, abierta e inteligente."
+          </p>
+          <cite class="block mt-6 font-mono text-sm not-italic text-[#52525b]">— Brahyan Belalcazar, Founder & CEO</cite>
+        </blockquote>
+      </Reveal>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 bg-[#0c0c0e] border-y border-white/[0.06] scroll-mt-16">
+    <div class="max-w-3xl mx-auto text-center">
+      <SectionHeading
+        index="004"
+        title="Sobre Nosotros"
+        subtitle="SouthWest AI Labs (SWAL) construye la infraestructura abierta de la IA soberana: memoria agentic, redes P2P y runtimes de agentes."
+      />
+
+      <Reveal>
+        <div class="card-glow p-8 mb-10 text-left">
+          <div class="flex items-center gap-5 mb-6">
+            <div class="w-16 h-16 rounded-xl border border-[#22d3ee]/30 bg-[#22d3ee]/10 flex items-center justify-center shrink-0">
+              <span class="font-display text-xl font-bold text-[#22d3ee]">BB</span>
+            </div>
+            <div>
+              <h3 class="font-display text-2xl font-semibold text-[#f4f4f5]">Brahyan Belalcazar</h3>
+              <p class="font-mono text-sm text-[#22d3ee]">Founder & CEO · SouthWest AI Labs</p>
+            </div>
+          </div>
+          <p class="text-[#a1a1aa] leading-relaxed">
+            <strong class="text-[#f4f4f5] font-medium">SouthWest AI Labs (SWAL)</strong> construye la infraestructura abierta para que la IA
+            corra en tu dispositivo: memoria agentic, redes P2P y runtimes de agentes — todo open source,
+            sin lock-in de nube y con soberanía total sobre tus datos.
+          </p>
+        </div>
+      </Reveal>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <Stat value="16+" label="Projects" />
+        <Stat value="20+" label="Open Source Repos" delay={100} />
+        <Stat value="8+" label="Technologies" delay={200} />
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 scroll-mt-16">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Contact</h2>
-      <p class="text-slate-400 text-lg mb-12">
-        Interested in working together or have questions?
-      </p>
+      <SectionHeading
+        index="005"
+        title="Contact"
+        subtitle="¿Colaboramos? Abierto a research partnerships, ofertas y contribuciones."
+      />
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <a
-          href="https://github.com/iberi22"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="group bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
-        >
-          <div class="w-14 h-14 bg-slate-800 group-hover:bg-slate-700 rounded-xl mx-auto mb-4 flex items-center justify-center transition-colors">
-            <svg class="w-7 h-7 text-slate-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </div>
-          <h3 class="font-bold text-white mb-1">GitHub</h3>
-          <p class="text-slate-400 text-sm">@iberi22</p>
-        </a>
+        <Reveal>
+          <a href="https://github.com/iberi22" target="_blank" rel="noopener noreferrer" class="card-glow group p-8 flex flex-col items-center">
+            <svg class="w-8 h-8 text-[#a1a1aa] group-hover:text-[#22d3ee] mb-4 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <h3 class="font-display font-semibold text-[#f4f4f5] mb-1 group-hover:text-[#22d3ee] transition-colors">GitHub</h3>
+            <p class="font-mono text-xs text-[#71717a]">@iberi22</p>
+          </a>
+        </Reveal>
 
-        <a
-          href="https://t.me/BeRi0n3"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="group bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
-        >
-          <div class="w-14 h-14 bg-slate-800 group-hover:bg-slate-700 rounded-xl mx-auto mb-4 flex items-center justify-center transition-colors">
-            <svg class="w-7 h-7 text-slate-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-          </div>
-          <h3 class="font-bold text-white mb-1">Telegram</h3>
-          <p class="text-slate-400 text-sm">@BeRi0n3</p>
-        </a>
+        <Reveal delay={100}>
+          <a href="https://t.me/BeRi0n3" target="_blank" rel="noopener noreferrer" class="card-glow group p-8 flex flex-col items-center">
+            <svg class="w-8 h-8 text-[#a1a1aa] group-hover:text-[#22d3ee] mb-4 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            <h3 class="font-display font-semibold text-[#f4f4f5] mb-1 group-hover:text-[#22d3ee] transition-colors">Telegram</h3>
+            <p class="font-mono text-xs text-[#71717a]">@BeRi0n3</p>
+          </a>
+        </Reveal>
 
-        <a
-          href="https://github.com/southwest-ai-labs"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="group bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
-        >
-          <div class="w-14 h-14 bg-slate-800 group-hover:bg-slate-700 rounded-xl mx-auto mb-4 flex items-center justify-center transition-colors">
-            <svg class="w-7 h-7 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <Reveal delay={200}>
+          <a href="https://github.com/southwest-ai-labs" target="_blank" rel="noopener noreferrer" class="card-glow group p-8 flex flex-col items-center">
+            <svg class="w-8 h-8 text-[#a1a1aa] group-hover:text-[#22d3ee] mb-4 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
             </svg>
-          </div>
-          <h3 class="font-bold text-white mb-1">Website</h3>
-          <p class="text-slate-400 text-sm">southwest-ai-labs</p>
-        </a>
+            <h3 class="font-display font-semibold text-[#f4f4f5] mb-1 group-hover:text-[#22d3ee] transition-colors">Website</h3>
+            <p class="font-mono text-xs text-[#71717a]">southwest-ai-labs</p>
+          </a>
+        </Reveal>
       </div>
     </div>
   </section>
 </Layout>
-
-<style>
-  .text-gradient {
-    background: linear-gradient(135deg, #3b82f6, #6366f1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-</style>

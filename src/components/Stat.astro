@@ -1,0 +1,21 @@
+---
+/**
+ * Stat.astro — métrica con fuente mono.
+ */
+import Reveal from './Reveal.astro';
+
+interface Props {
+  value: string;
+  label: string;
+  delay?: number;
+}
+
+const { value, label, delay = 0 } = Astro.props;
+---
+
+<Reveal delay={delay}>
+  <div class="card-glow p-6 text-center">
+    <div class="font-mono text-3xl font-medium text-[#22d3ee] mb-1">{value}</div>
+    <div class="text-sm text-[#a1a1aa]">{label}</div>
+  </div>
+</Reveal>
