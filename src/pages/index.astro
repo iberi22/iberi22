@@ -1,288 +1,233 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ProjectCard from '../components/ProjectCard.astro';
+import ShaderBackground from '../components/ShaderBackground.astro';
+import Reveal from '../components/Reveal.astro';
 import '../styles/global.css';
 
-const featuredProjects = [
+const projects = [
   {
+    id: "PRJ_01",
     title: "SaberParaTodos",
-    repo: "iberi22/worldexams",
     url: "https://saberparatodos.space",
+    tag: "Educational platform · 16+ countries",
     tech: "Astro, Svelte, TailwindCSS, Supabase",
-    description: "Exámenes de práctica para 16+ países. Educación gratuita y accesible.",
-    featured: true,
+    desc: "Exámenes de práctica gratuitos y accesibles. Educación para todos.",
   },
   {
+    id: "PRJ_02",
     title: "Shelf",
-    repo: "iberi22/shelf",
     url: "https://shelf-inventory.vercel.app",
+    tag: "P2P inventory & POS",
     tech: "React 19, TypeScript, P2P (CRDT)",
-    description: "Inventario + POS offline-first con sincronización P2P y cifrado post-quantum.",
-    featured: true,
+    desc: "Inventario offline-first con sincronización P2P y cifrado post-quantum.",
   },
   {
+    id: "PRJ_03",
     title: "Hosteler-IA",
-    repo: "iberi22/hosteler-ia",
     url: "https://hosteler-ia-mu.vercel.app",
+    tag: "Field service agent",
     tech: "TypeScript, React, IA",
-    description: "Gestión de servicios de campo (FSM) con IA, aprobaciones digitales y modo offline.",
-    featured: true,
+    desc: "Gestión de servicios de campo con IA, aprobaciones digitales y modo offline.",
   },
   {
-    title: "MiMatera",
-    repo: "iberi22/portafolio-mimatera",
-    url: "https://mimatera-catalogador.pages.dev",
-    tech: "PWA, JavaScript",
-    description: "Catálogo PWA de materas con fotos y tokens de un solo uso.",
-    featured: true,
-  },
-  {
+    id: "PRJ_04",
     title: "TikTokBoost",
-    repo: "iberi22/tiktboost",
     url: "https://tiktboost.vercel.app",
+    tag: "Content analytics engine",
     tech: "TypeScript",
-    description: "Gestor de contenido y métricas TikTok.",
-    featured: true,
+    desc: "Gestor de contenido y métricas TikTok.",
   },
   {
+    id: "PRJ_05",
     title: "OrionHealth",
-    repo: "iberi22/OrionHealth",
     url: "https://github.com/iberi22/OrionHealth",
+    tag: "Medical diagnostic copilot",
     tech: "Flutter, Dart",
-    description: "Asistente de salud privacy-first con SSI on-device y estándares médicos offline.",
-    featured: true,
+    desc: "Asistente de salud privacy-first con SSI on-device y estándares médicos offline.",
   },
 ];
 
-const openSourceProjects = [
-  { title: "Gestalt", repo: "iberi22/gestalt" },
-  { title: "Xavier", repo: "iberi22/xavier" },
-  { title: "Obscura", repo: "iberi22/obscura" },
-  { title: "swal-ui", repo: "iberi22/swal-ui" },
-  { title: "SWAL Desktop", repo: "iberi22/swal-desktop" },
-  { title: "GOS", repo: "iberi22/gastronomic-open-standard-GOS" },
-  { title: "Isar Agent Memory", repo: "iberi22/isar_agent_memory" },
-  { title: "Skills", repo: "iberi22/skills" },
-  { title: "MCP Database Server", repo: "iberi22/mcp-database-server" },
-  { title: "Socrata-rs", repo: "iberi22/socrata-rs" },
-  { title: "SWAL Agent Rust", repo: "iberi22/swal-agent-rust" },
-  { title: "WebAuditMCP", repo: "iberi22/WebAuditMCP" },
+const openSource = [
+  { name: "Xavier", desc: "Memoria Agentic", url: "https://github.com/iberi22/xavier", accent: true },
+  { name: "Gestalt", desc: "Core Orchestrator", url: "https://github.com/iberi22/gestalt", accent: false },
+  { name: "Obscura", desc: "Privacy Layer", url: "https://github.com/iberi22/obscura", accent: false },
+  { name: "swal-ui", desc: "Component Library", url: "https://github.com/iberi22/swal-ui", accent: false },
+  { name: "Isar Agent Memory", desc: "Vector Storage", url: "https://github.com/iberi22/isar_agent_memory", accent: false },
+  { name: "SWAL Agent Rust", desc: "Rust Agent Runtime", url: "https://github.com/iberi22/swal-agent-rust", accent: false },
+  { name: "MCP Database Server", desc: "Context Protocol DB", url: "https://github.com/iberi22/mcp-database-server", accent: false },
+  { name: "Skills", desc: "Agent Skills Registry", url: "https://github.com/iberi22/skills", accent: false },
 ];
+
+const stack = ["Rust", "TypeScript", "Dart/Flutter", "Astro", "Python", "React", "PostgreSQL", "Supabase", "Svelte", "P2P", "WebAssembly", "NixOS"];
 ---
 
 <Layout>
-  <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Background gradient orbs -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute top-1/4 -left-32 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
-    </div>
+  <ShaderBackground />
 
-    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-2 bg-slate-900/80 border border-slate-700 rounded-full text-sm text-slate-300 mb-8">
-        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-        Open Source First
+  <!-- ============ HERO ============ -->
+  <section class="min-h-[80vh] flex flex-col justify-center max-w-4xl pt-20 mb-32">
+    <Reveal>
+      <div class="font-mono-label text-mono-label text-[#22d3ee] mb-6 flex items-center gap-2">
+        <span class="material-symbols-outlined text-sm">terminal</span>
+        <span>DEV.SYS // v1.0.0</span>
       </div>
-
-      <h1 class="text-5xl sm:text-6xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight">
-        Southwest<br />
-        <span class="text-gradient">AI Labs</span>
+    </Reveal>
+    <Reveal delay={80}>
+      <h1 class="massive-heading mb-8">
+        Brahyan<br />Belalcazar
       </h1>
-
-      <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-        Building <span class="text-slate-200 font-semibold">local-first, privacy-first AI</span>: agents that live on
-        <span class="text-slate-200 font-semibold">your device</span> — not in someone else's data center.
+    </Reveal>
+    <Reveal delay={160}>
+      <p class="font-body-lg text-body-lg text-[#7e8b8f] max-w-2xl leading-relaxed border-l-2 border-[#3c494c]/50 pl-6">
+        Full-stack developer &amp; AI engineer. Fundador de SouthWest AI Labs (SWAL).
+        Construyo software open-source, local-first y soberano — la IA debe correr en tu hardware.
       </p>
-
-      <div class="flex flex-wrap items-center justify-center gap-3 mb-10">
-        {["🏠 Local-first", "🔐 Privacy-first", "🕊️ Open source", "🤖 Agentic"].map((t) => (
-          <span class="px-4 py-1.5 bg-slate-900/80 border border-slate-700 rounded-full text-slate-300 text-sm font-medium">
-            {t}
-          </span>
-        ))}
-      </div>
-
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#projects" class="btn-primary flex items-center gap-2">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-          </svg>
-          View Projects
-        </a>
-        <a href="#contact" class="btn-secondary flex items-center gap-2">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-          </svg>
-          Contact
-        </a>
-      </div>
-
-      <!-- Tech badges -->
-      <div class="mt-16 flex flex-wrap items-center justify-center gap-3">
-        {["Rust", "TypeScript", "Astro", "Python", "Flutter", "React", "PostgreSQL", "Supabase"].map((t) => (
-          <span class="px-3 py-1 bg-slate-900 border border-slate-700 rounded-full text-slate-400 text-sm font-medium">
-            {t}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-      <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-      </svg>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-24 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Featured Projects</h2>
-        <p class="text-slate-400 text-lg max-w-2xl mx-auto">
-          Production-grade software products built by our team.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {featuredProjects.map((project) => (
-          <ProjectCard {...project} />
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Open Source Section -->
-  <section id="open-source" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Open Source</h2>
-        <p class="text-slate-400 text-lg max-w-2xl mx-auto">
-          Open protocols, tools and libraries from our lab.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {openSourceProjects.map((project) => (
-          <a
-            href={`https://github.com/${project.repo}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
-          >
-            <div class="flex items-center gap-3 mb-2">
-              <svg class="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              <span class="font-semibold text-white group-hover:text-blue-400 transition-colors">
-                {project.title}
-              </span>
-            </div>
-            <p class="text-slate-500 text-sm font-mono">{project.repo}</p>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-24 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Sobre Nosotros</h2>
-      <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-10 rounded-full"></div>
-
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 mb-10">
-        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-          <span class="text-white text-2xl font-bold">BB</span>
-        </div>
-        <h3 class="text-2xl font-bold text-white mb-1">Brahyan Belalcazar</h3>
-        <p class="text-blue-400 mb-6">Founder & CEO · Southwest AI Labs</p>
-
-        <blockquote class="text-slate-300 text-lg leading-relaxed italic border-l-4 border-blue-500 pl-6 text-left">
-          "La premisa principal es la comodidad de todos los seres humanos en la Tierra, brindando tecnología segura, abierta e inteligente."
-        </blockquote>
-
-        <p class="text-slate-400 mt-6 leading-relaxed text-left">
-          <strong class="text-slate-200">SouthWest AI Labs (SWAL)</strong> construye la infraestructura abierta para que la IA
-          corra en tu dispositivo: memoria agentic, redes P2P y runtimes de agentes — todo open source,
-          sin lock-in de nube y con soberanía total sobre tus datos.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        {[
-          { label: "Projects", value: "16+" },
-          { label: "Open Source Repos", value: "20+" },
-          { label: "Technologies", value: "8+" },
-        ].map((stat) => (
-          <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
-            <div class="text-3xl font-bold text-white mb-1">{stat.value}</div>
-            <div class="text-slate-400 text-sm">{stat.label}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Contact</h2>
-      <p class="text-slate-400 text-lg mb-12">
-        Interested in working together or have questions?
-      </p>
-
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    </Reveal>
+    <Reveal delay={240}>
+      <div class="mt-12 flex flex-wrap gap-4">
         <a
           href="https://github.com/iberi22"
           target="_blank"
           rel="noopener noreferrer"
-          class="group bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
+          class="border border-[#3c494c]/30 text-[#cfccc7] px-8 py-3 font-mono-label text-mono-label hover:bg-[#131314] transition-colors flex items-center gap-2 rounded"
         >
-          <div class="w-14 h-14 bg-slate-800 group-hover:bg-slate-700 rounded-xl mx-auto mb-4 flex items-center justify-center transition-colors">
-            <svg class="w-7 h-7 text-slate-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </div>
-          <h3 class="font-bold text-white mb-1">GitHub</h3>
-          <p class="text-slate-400 text-sm">@iberi22</p>
+          <span class="material-symbols-outlined text-[18px]">code</span>
+          GitHub
         </a>
-
         <a
-          href="https://t.me/BeRi0n3"
+          href="https://www.linkedin.com/in/brahyansbr"
           target="_blank"
           rel="noopener noreferrer"
-          class="group bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
+          class="text-[#22d3ee] px-8 py-3 font-mono-label text-mono-label hover:underline decoration-[#22d3ee] transition-all flex items-center gap-2"
         >
-          <div class="w-14 h-14 bg-slate-800 group-hover:bg-slate-700 rounded-xl mx-auto mb-4 flex items-center justify-center transition-colors">
-            <svg class="w-7 h-7 text-slate-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-          </div>
-          <h3 class="font-bold text-white mb-1">Telegram</h3>
-          <p class="text-slate-400 text-sm">@BeRi0n3</p>
-        </a>
-
-        <a
-          href="https://github.com/southwest-ai-labs"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="group bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-slate-600 hover:bg-slate-800/80 transition-all duration-200"
-        >
-          <div class="w-14 h-14 bg-slate-800 group-hover:bg-slate-700 rounded-xl mx-auto mb-4 flex items-center justify-center transition-colors">
-            <svg class="w-7 h-7 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
-            </svg>
-          </div>
-          <h3 class="font-bold text-white mb-1">Website</h3>
-          <p class="text-slate-400 text-sm">southwest-ai-labs</p>
+          LinkedIn
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
         </a>
       </div>
+    </Reveal>
+    <Reveal delay={320}>
+      <div class="mt-14 flex flex-wrap gap-2 max-w-2xl">
+        {stack.map((t) => (
+          <span class="font-mono-code text-mono-code text-[12px] px-3 py-1 rounded border border-[#3c494c]/30 bg-[#131314] text-[#a8a5a1]">{t}</span>
+        ))}
+      </div>
+    </Reveal>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="mb-40" id="projects">
+    <Reveal>
+      <div class="section-head">
+        <span class="material-symbols-outlined text-[#22d3ee]">apps</span>
+        <h2 class="font-headline-lg text-headline-lg text-[#d8d5d0]">Proyectos</h2>
+      </div>
+    </Reveal>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.map((p, i) => (
+        <Reveal delay={(i % 3) * 100}>
+          <a
+            href={p.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-panel p-6 flex flex-col justify-between h-56 card-hover rounded block"
+          >
+            <div>
+              <div class="font-mono-label text-mono-label text-[#22d3ee] mb-2">{p.id}</div>
+              <h4 class="font-headline-md text-headline-md text-[#cfccc7] mb-2">{p.title}</h4>
+              <div class="font-mono-code text-mono-code text-[#3c494c] text-sm mb-3">{p.tag}</div>
+              <p class="font-body-md text-body-md text-[#7e8b8f] leading-relaxed">{p.desc}</p>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-4">
+              {p.tech.split(', ').map((t) => (
+                <span class="font-mono-code text-mono-code text-[11px] px-2 py-0.5 rounded border border-[#3c494c]/30 bg-[#0a0a0b] text-[#7e8b8f]">
+                  {t}
+                </span>
+              ))}
+            </div>
+          </a>
+        </Reveal>
+      ))}
     </div>
   </section>
-</Layout>
 
-<style>
-  .text-gradient {
-    background: linear-gradient(135deg, #3b82f6, #6366f1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-</style>
+  <!-- ============ OPEN SOURCE ============ -->
+  <section class="mb-40" id="stack">
+    <Reveal>
+      <div class="section-head">
+        <span class="material-symbols-outlined text-[#22d3ee]">code_blocks</span>
+        <h2 class="font-headline-lg text-headline-lg text-[#d8d5d0]">Open Source</h2>
+      </div>
+    </Reveal>
+    <Reveal delay={100}>
+      <div class="border border-[#3c494c]/20 bg-[#131314] p-8 rounded">
+        <p class="font-mono-code text-mono-code text-[#7e8b8f] mb-8 leading-relaxed">
+          /* Open-source infrastructure for local-first AI.
+             Rust for performance-critical agent logic and memory management. */
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6">
+          {openSource.map((p) => (
+            <a
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class={`border-l pl-4 ${p.accent ? 'border-[#22d3ee]/50' : 'border-[#3c494c]/30'} hover:border-[#22d3ee] transition-colors group`}
+            >
+              <div class={`font-body-md text-body-md font-medium mb-1 group-hover:text-[#22d3ee] transition-colors ${p.accent ? 'text-[#22d3ee]' : 'text-[#d8d5d0]'}`}>
+                {p.name}
+              </div>
+              <div class="font-mono-label text-mono-label text-[#7e8b8f] text-[11px]">{p.desc}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </Reveal>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="mb-32" id="about">
+    <Reveal>
+      <div class="section-head">
+        <span class="material-symbols-outlined text-[#22d3ee]">person</span>
+        <h2 class="font-headline-lg text-headline-lg text-[#d8d5d0]">Sobre mí</h2>
+      </div>
+    </Reveal>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {[
+        {
+          icon: "dns",
+          title: "Local-first",
+          text: "Ejecución en el edge. Modelos optimizados para inferencia en hardware de consumo. Latencia ultra baja sin dependencia de red externa.",
+        },
+        {
+          icon: "shield_lock",
+          title: "Privacy-first",
+          text: "Tus datos, tus pesos. Arquitecturas que garantizan aislamiento criptográfico de contextos y memorias agenticas (Xavier).",
+        },
+        {
+          icon: "hub",
+          title: "Soberano",
+          text: "Protocolos P2P, código abierto AGPL-3.0 y gobernanza transparente. Sin lock-in de nube ni dependencia de terceros.",
+        },
+      ].map((p, i) => (
+        <Reveal delay={i * 100}>
+          <div class="p-8 border border-[#3c494c]/20 bg-[#131314] card-hover rounded">
+            <div class="w-12 h-12 bg-[#0a0a0b] flex items-center justify-center border border-[#3c494c]/30 mb-6 rounded">
+              <span class="material-symbols-outlined text-[#cfccc7]">{p.icon}</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-[#d8d5d0] mb-4">{p.title}</h3>
+            <p class="font-body-md text-body-md text-[#7e8b8f]">{p.text}</p>
+          </div>
+        </Reveal>
+      ))}
+    </div>
+
+    <Reveal delay={150}>
+      <blockquote class="mt-16 max-w-3xl mx-auto text-center">
+        <p class="font-headline-lg text-headline-lg text-[#d8d5d0] leading-snug">
+          "La premisa principal es la comodidad de todos los seres humanos en la Tierra, brindando tecnología segura, abierta e inteligente."
+        </p>
+        <cite class="block mt-6 font-mono-label text-mono-label not-italic text-[#7e8b8f]">— Brahyan Belalcazar "ElBeRi"</cite>
+      </blockquote>
+    </Reveal>
+  </section>
+</Layout>
