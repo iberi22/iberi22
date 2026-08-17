@@ -16,7 +16,7 @@ const projects = [
   {
     id: "PRJ_02",
     title: "Shelf",
-    url: "https://shelf-inventory.vercel.app",
+    url: "https://estante-inventario.vercel.app",
     tag: "P2P inventory & POS",
     tech: "React 19, TypeScript, P2P (CRDT)",
     desc: "Inventario offline-first con sincronización P2P y cifrado post-quantum.",
@@ -48,7 +48,7 @@ const projects = [
 ];
 
 const openSource = [
-  { name: "Xavier", desc: "Memoria Agentic", url: "https://github.com/iberi22/xavier", accent: true },
+  { name: "Xavier", desc: "Memoria Agentic · apertura próximamente", accent: true },
   { name: "Gestalt", desc: "Core Orchestrator", url: "https://github.com/iberi22/gestalt", accent: false },
   { name: "Obscura", desc: "Privacy Layer", url: "https://github.com/iberi22/obscura", accent: false },
   { name: "swal-ui", desc: "Component Library", url: "https://github.com/iberi22/swal-ui", accent: false },
@@ -166,6 +166,7 @@ const stack = ["Rust", "TypeScript", "Dart/Flutter", "Astro", "Python", "React",
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6">
           {openSource.map((p) => (
+            p.url ? (
             <a
               href={p.url}
               target="_blank"
@@ -177,6 +178,15 @@ const stack = ["Rust", "TypeScript", "Dart/Flutter", "Astro", "Python", "React",
               </div>
               <div class="font-mono-label text-mono-label text-[#7e8b8f] text-[11px]">{p.desc}</div>
             </a>
+            ) : (
+            <div class={`border-l pl-4 ${p.accent ? 'border-[#22d3ee]/50' : 'border-[#3c494c]/30'}`}>
+              <div class={`font-body-md text-body-md font-medium mb-1 ${p.accent ? 'text-[#22d3ee]' : 'text-[#d8d5d0]'}`}>
+                {p.name}
+              </div>
+              <div class="font-mono-label text-mono-label text-[#7e8b8f] text-[11px]">{p.desc}</div>
+              <span class="font-mono-label text-mono-label text-[10px] mt-1 text-[#7e8b8f] border border-[#3c494c]/30 rounded px-1.5 py-0.5 inline-block">PRIVATE</span>
+            </div>
+            )
           ))}
         </div>
       </div>
