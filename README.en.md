@@ -62,6 +62,20 @@ Until **the mesh (edge-mesh) connects every app in the ecosystem**, repos stay u
 
 `ManteniApp` · `Veedur-IA` · `Gara-G` · `Nido` · `Software Factory` · `SWAL Agent Runner` · `Core SWAL PWA` · `Personal Assistant` · `Preun-IA` · `saber-proactivo` — and more at [github.com/iberi22](https://github.com/iberi22).
 
+## ⚙️ How we work — the process is the product
+
+SWAL is built with an open, verifiable, replicable workflow (GitCore protocol) that any agent or human can follow:
+
+| Step | Rule |
+|---|---|
+| **1 issue = 1 branch = 1 PR** | Issues with verifiable acceptance criteria; commits `type(scope): description (closes #N)` |
+| **Verification before merge** | `fmt` + `clippy` + tests + verification pipeline — a PR with red checks is NOT merged |
+| **No smoke** | A feature is only marked "done" with real green tests, not by declaration |
+| **Autonomous waves** | Agents (Jules, Codex, OpenCode) execute issues with verifiable ACs; a human validates the merge |
+| **Zero secrets** | `gitleaks` in CI; AGPL-3.0-only license across the ecosystem |
+
+Every repo that opens to the public passes a prior checklist (README + LICENSE + CONTRIBUTING + SECURITY + .gitignore + AGENTS.md) and openings are gradual and documented. The full process is defined in the *SWAL Collaboration Guide* (v1.0).
+
 ---
 
 ## 📊 Reality check
