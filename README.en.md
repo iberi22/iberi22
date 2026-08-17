@@ -1,4 +1,4 @@
-# Brahyam Belalcázar — @iberi22 · "ElBeRi" 👋
+# Brahyan Belalcazar — @iberi22 · "ElBeRi" 👋
 
 [![Open to work](https://img.shields.io/badge/Open%20to%20work-Yes-brightgreen?style=flat-square)](https://www.linkedin.com/in/brahyansbr)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-in%2Fbrahyansbr-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brahyansbr)
@@ -33,7 +33,7 @@ What it means in practice:
 |---|---|---|
 | 🧠 Agentic memory | Xavier | Agents with persistent memory that never forget context |
 | 🌐 P2P network (mesh) | edge-mesh | Sync your devices without going through the cloud — the network's data plane |
-| 🤖 Agent runtime | [swal-agent-runner](https://github.com/iberi22/swal-agent-runner) + [gestalt](https://github.com/iberi22/gestalt) | Run and orchestrate autonomous agents locally |
+| 🤖 Agent runtime | swal-agent-runner + [gestalt](https://github.com/iberi22/gestalt) | Run and orchestrate autonomous agents locally |
 | 🎨 Design system | [@swal/ui](https://github.com/iberi22/swal-ui) | One visual identity for the whole ecosystem |
 
 ### 🔐 Repo access — by invitation
@@ -53,10 +53,10 @@ Until **the mesh (edge-mesh) connects every app in the ecosystem**, repos stay u
 | **Shelf** — offline-first inventory + POS with P2P sync (CRDT). *Solves: selling without stable internet or an expensive cash register.* | React 19·TS | 🔒 | [Live](https://estante-inventario.vercel.app) | — | — | [Invitation](https://t.me/BeRi0n3) |
 | **Isar Agent Memory** — Dart agent memory (graphs, embeddings). *Solves: offline-first memory for Flutter apps.* | Dart | 🔓 | [pub.dev](https://pub.dev/packages/isar_agent_memory) | [Issues](https://github.com/iberi22/isar_agent_memory/issues) | [Docs](https://github.com/iberi22/isar_agent_memory/tree/main/docs) | [Repo](https://github.com/iberi22/isar_agent_memory) |
 | **Hosteler-IA** — field service management (FSM) with AI and offline. *Solves: coordinating technicians and work orders in the field.* | TS·React | 🔒 | [Live](https://hosteler-ia-mu.vercel.app) | — | — | [Invitation](https://t.me/BeRi0n3) |
-| **OrionHealth** — privacy-first health assistant with on-device SSI. *Solves: health with your data on your device.* | Flutter·Dart | 🔓 | [Demo](https://iberi22.github.io/OrionHealth/) | [Issues](https://github.com/iberi22/OrionHealth/issues) | [Docs](https://github.com/iberi22/OrionHealth/tree/main/docs) | [Repo](https://github.com/iberi22/OrionHealth) |
+| **OrionHealth** — privacy-first health assistant with on-device SSI. *Solves: health with your data on your device.* | Flutter·Dart | 🔓 | PWA in progress | [Issues](https://github.com/iberi22/OrionHealth/issues) | [Docs](https://github.com/iberi22/OrionHealth/tree/main/docs) | [Repo](https://github.com/iberi22/OrionHealth) |
 | **TikTokBoost** — TikTok content & analytics manager. *Solves: planning and measuring content without costly tools.* | TS | 🔒 | [Live](https://tiktboost.vercel.app) | — | — | [Invitation](https://t.me/BeRi0n3) |
 | **GOS** — open gastronomic standard. *Solves: documenting recipes in a structured, interoperable way.* | Astro | 🔓 | — | [Issues](https://github.com/iberi22/gastronomic-open-standard-GOS/issues) | [Docs](https://github.com/iberi22/gastronomic-open-standard-GOS/tree/main/docs) | [Repo](https://github.com/iberi22/gastronomic-open-standard-GOS) |
-| **Personal Portfolio** — my personal site & projects. | Svelte | 🔒 | [Live](https://portfolio-iberi22.vercel.app) | — | — | [Invitation](https://t.me/BeRi0n3) |
+| **Personal Portfolio** — my personal site & projects. | Svelte | 🔓 | [Live](https://portfolio-iberi22.vercel.app) | [Issues](https://github.com/iberi22/portfolio-iberi22/issues) | — | [Repo](https://github.com/iberi22/portfolio-iberi22) |
 
 ### 🌱 In development — upcoming network releases
 
@@ -68,7 +68,7 @@ Until **the mesh (edge-mesh) connects every app in the ecosystem**, repos stay u
 
 | Metric | Value |
 |---|---|
-| Ecosystem | 90+ repos at [github.com/iberi22](https://github.com/iberi22) (29 public) |
+| Ecosystem | 100 repos at [github.com/iberi22](https://github.com/iberi22) (23 public) |
 | Apps with live demo | 6 |
 | Published package | [isar_agent_memory](https://pub.dev/packages/isar_agent_memory) on pub.dev |
 | Licenses | AGPL-3.0 apps · MIT libraries |
@@ -84,6 +84,6 @@ Until **the mesh (edge-mesh) connects every app in the ecosystem**, repos stay u
 
 - **Lab:** [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs) · **Lab site:** [southwest-ai-labs.github.io](https://southwest-ai-labs.github.io)
 - **Personal portfolio:** [iberi22.github.io/portfolio-iberi22](https://iberi22.github.io/portfolio-iberi22) · mirror: [portfolio-iberi22.vercel.app](https://portfolio-iberi22.vercel.app)
-- **Resume (1 page):** [CV-Brahyam-Belalcazar.pdf](docs/CV-Brahyam-Belalcazar.pdf)
+- **Resume (1 page):** [CV-Brahyan-Belalcazar.pdf](docs/CV-Brahyan-Belalcazar.pdf)
 - **LinkedIn:** [in/brahyansbr](https://www.linkedin.com/in/brahyansbr)
 - **Telegram:** [@BeRi0n3](https://t.me/BeRi0n3) — open to collaborations, roles and projects with real-world impact.
