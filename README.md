@@ -60,7 +60,7 @@ Hasta que **el mesh (edge-mesh) conecte todas las apps del ecosistema**, los rep
 
 ### 🌱 En desarrollo — próximos lanzamientos de la red
 
-`ManteniApp` · `Veedur-IA` · `Gara-G` · `Nido` · `Software Factory` · `SWAL Agent Runner` · `Core SWAL PWA` · `Personal Assistant` · `Preun-IA` · `saber-proactivo` — y más en [github.com/iberi22](https://github.com/iberi22).
+`Veedur-IA` · `Gara-G` · `Nido` · `Software Factory` · `SWAL Agent Runner` · `Core SWAL PWA` · `Personal Assistant`
 
 ---
 
