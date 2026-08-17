@@ -82,7 +82,7 @@ Until **the mesh (edge-mesh) connects every app in the ecosystem**, repos stay u
 
 ## 🔗 Find me
 
-- **Lab:** [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs) · **Lab site:** [iberi22.github.io/iberi22](https://iberi22.github.io/iberi22)
+- **Lab:** [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs) · **Lab site:** [southwest-ai-labs.github.io](https://southwest-ai-labs.github.io)
 - **Personal portfolio:** [iberi22.github.io/portfolio-iberi22](https://iberi22.github.io/portfolio-iberi22) · mirror: [portfolio-iberi22.vercel.app](https://portfolio-iberi22.vercel.app)
 - **Resume (1 page):** [CV-Brahyam-Belalcazar.pdf](docs/CV-Brahyam-Belalcazar.pdf)
 - **LinkedIn:** [in/brahyansbr](https://www.linkedin.com/in/brahyansbr)
