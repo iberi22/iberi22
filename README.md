@@ -57,6 +57,27 @@ Hasta que **el mesh (edge-mesh) conecte todas las apps del ecosistema**, los rep
 | **TikTokBoost** — gestor de contenido y métricas TikTok. *Resuelve: planificar y medir contenido sin herramientas caras.* | TS | 🔒 | [Live](https://tiktboost.vercel.app) | — | — | [Invitación](https://t.me/BeRi0n3) |
 | **GOS** — estándar abierto gastronómico. *Resuelve: documentar recetas de forma estructurada e interoperable.* | Astro | 🔓 | — | [Issues](https://github.com/iberi22/gastronomic-open-standard-GOS/issues) | [Docs](https://github.com/iberi22/gastronomic-open-standard-GOS/tree/main/docs) | [Repo](https://github.com/iberi22/gastronomic-open-standard-GOS) |
 | **Portfolio Personal** — mi web personal y de proyectos. | Svelte | 🔓 | [Live](https://portfolio-iberi22.vercel.app) | [Issues](https://github.com/iberi22/portfolio-iberi22/issues) | — | [Repo](https://github.com/iberi22/portfolio-iberi22) |
+| **SismoCheck** — Triaje Estructural Post-Terremoto con IA. *Resuelve: inspección técnica post-sismo en 15 min (ATC-20). (Nota: app independiente, no parte de SWAL).* | React 19·TS | 🔓 | [Live](https://sismocheck-evaluaci-n-r-pida-post-sismo-dossier-a-138396941132.us-east1.run.app/) | — | — | — |
+
+<details>
+<summary><b>🛠️ SismoCheck: Especificaciones Técnicas y Detalles</b></summary>
+
+<br>
+
+**SismoCheck | Triaje Estructural Post-Terremoto con IA**  
+PWA cívica y 100% offline que guía una inspección técnica de 15 minutos tras un sismo. Aplica los criterios forenses de ATC-20 y NSR-10 para clasificar el daño en columnas, fachadas y tabiques mediante semáforos de habitabilidad (Verde/Amarillo/Rojo), integrando geolocalización, análisis visual asistido por IA y generación de informes técnicos imprimibles para peritos estructuristas. *(Nota: Esta app es independiente y no hace parte de la red de SWAL).*
+
+### 🛠️ Especificaciones Técnicas
+- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS.
+- **Desarrollo:** Vibe-coded y prototipado mediante Google AI Studio (Build) con Gemini 2.0 Flash.
+- **Arquitectura:** PWA 100% Offline-First, Service Workers (Workbox), almacenamiento IndexedDB.
+- **Inteligencia Artificial:**
+  - Inferencia local en el borde (WebGPU / Heurística forense ATC-20).
+  - Integración multimodal Cloud opcional con Google Gemini Flash API (BYOK).
+- **APIs Web:** Geolocation API, MediaDevices Camera API, HTML5 Canvas (calibración de escala métrica).
+- **Seguridad & Privacidad:** Sin recolección de datos en servidores externos; todas las evidencias se procesan y almacenan en el dispositivo.
+
+</details>
 
 ### 🌱 En desarrollo — próximos lanzamientos de la red
 
