@@ -62,6 +62,20 @@ Hasta que **el mesh (edge-mesh) conecte todas las apps del ecosistema**, los rep
 
 `Veedur-IA` · `Gara-G` · `Nido` · `Software Factory` · `SWAL Agent Runner` · `Core SWAL PWA` · `Personal Assistant`
 
+## ⚙️ Cómo trabajamos — el proceso es el producto
+
+SWAL se construye con un flujo abierto, verificable y replicable (protocolo GitCore), que cualquier agente o humano puede seguir:
+
+| Paso | Regla |
+|---|---|
+| **1 issue = 1 rama = 1 PR** | Issues con criterios de aceptación verificables; commits `type(scope): descripción (closes #N)` |
+| **Verificación antes del merge** | `fmt` + `clippy` + tests + pipeline de verificación — un PR con checks rojos NO se mergea |
+| **Nada de humo** | Una feature solo se marca "done" con pruebas reales en verde, no por declaración |
+| **Waves autónomas** | Agentes (Jules, Codex, OpenCode) ejecutan issues con AC verificables; el merge lo valida un humano |
+| **Cero secretos** | `gitleaks` en CI; licencia AGPL-3.0-only en todo el ecosistema |
+
+Cada repo que se abre al público pasa un checklist previo (README + LICENSE + CONTRIBUTING + SECURITY + .gitignore + AGENTS.md) y las aperturas son graduales y documentadas. El proceso completo está definido en la *Guía de Colaboración SWAL* (v1.0).
+
 ---
 
 ## 📊 Reality check
