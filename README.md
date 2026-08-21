@@ -12,7 +12,7 @@
 ---
 
 **Full-Stack Deep Tech Systems Architect & AI Engineer**  
-Founder & Lead Developer of **BELA** and **SouthWest AI Labs (SWAL)**.
+Founder & Creator of **SouthWest AI Labs (SWAL)**.
 
 I design and build **local-first, privacy-first AI infrastructure & decentralized networks** end-to-end:
 - **Systems & Core:** Rust, NixOS, Docker, WebGPU (wgpu), Linux kernel & multi-agent swarms.
@@ -22,12 +22,13 @@ I design and build **local-first, privacy-first AI infrastructure & decentralize
 
 ---
 
-## 🏢 Corporate & Organization Structure
+## 🌎 SouthWest AI Labs (SWAL) — Vision & Community Mission
 
-- **BELA (Colombia):** The parent technology company and owner of the entire **SWAL** (SouthWest AI Labs) ecosystem.
-- **tripro.cl (Chile):** Chilean enterprise subsidiary, strategic co-operating partner, and client of BELA — powering industrial deployments including **[ManteniApp](https://tripro.cl/manteniapp)**.
-- **SouthWest AI Labs (SWAL):** Open-source deep-tech research lab and decentralized software network.
-- **Founder & Lead Developer:** **Brahyan Belalcázar (@iberi22 / "ElBeRi")** — Architecting and leading technical execution across all SWAL, BELA, and tripro.cl core platforms.
+> **"Empower humanity by concentrating, preserving, refining, and protecting human collective knowledge using 100% deterministic tooling for management, and decentralizing it through Xavier and sovereign P2P networks so it can never be altered or erased."**
+
+- **SouthWest AI Labs (SWAL):** Open community deep-tech research lab and decentralized software network.
+- **Founder & Lead Architect:** **Brahyan Belalcázar (@iberi22 / "ElBeRi")** — Architecting and leading technical execution across the SWAL decentralized mesh.
+- **Strategic Enterprise Partner:** **[tripro.cl](https://tripro.cl)** (Chile) — Enterprise engineering partner deploying industrial field software (**[ManteniApp](https://tripro.cl/manteniapp)**) powered by SWAL local-first architecture.
 
 ---
 
