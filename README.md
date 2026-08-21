@@ -1,125 +1,82 @@
-# Brahyan Belalcazar — @iberi22 · "ElBeRi" 👋
+# Brahyan Belalcázar — @iberi22 · "ElBeRi" 👋
 
 [![Open to work](https://img.shields.io/badge/Open%20to%20work-Yes-brightgreen?style=flat-square)](https://www.linkedin.com/in/brahyansbr)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-in%2Fbrahyansbr-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brahyansbr)
-[![Read in English](https://img.shields.io/badge/Read%20in-English-4285F4?style=flat-square)](README.en.md)
+[![Telegram](https://img.shields.io/badge/Telegram-@BeRi0n3-blue?style=flat-square&logo=telegram)](https://t.me/BeRi0n3)
 
-**Full-stack developer & AI engineer** · Fundador de [SouthWest AI Labs](https://github.com/southwest-ai-labs) (SWAL) ·
-Construyo **infraestructura de IA local-first y privacy-first** de principio a fin: backend (Rust), móvil (Flutter) y web (TypeScript/Svelte).
 
-`Rust` · `Dart/Flutter` · `TypeScript` · `Svelte/Astro` · `Python` · `NixOS` · `PostgreSQL`
+🌐 **Languages / Idiomas / 语言:**  
+[English](README.md) · [Español](README.es.md) · [中文 (Chinese)](README.zh.md) · [हिन्दी (Hindi)](README.hi.md) · [العربية (Arabic)](README.ar.md) · [বাংলা (Bengali)](README.bn.md) · [Português](README.pt.md) · [Русский (Russian)](README.ru.md) · [اردو (Urdu)](README.ur.md) · [Français (French)](README.fr.md) · [Deutsch](README.de.md) · [日本語 (Japanese)](README.ja.md)
 
----
-
-## 🌎 SouthWest AI Labs (SWAL) — la idea central y el GOAL
-
-> **La IA debería vivir en TU dispositivo, no en el data center de otra empresa.**
-
-SWAL es un laboratorio open-source fundado y mantenido por mí. La misión del laboratorio:
-
-> **SouthWest AI Labs es un laboratorio de ideas para soluciones con integración comunitaria. Nuestra misión: darle a todos acceso a herramientas de última tecnología para diseñar sistemas de información que mejoren la calidad de vida. Aceleramos sistemas que brindan calidad de vida a las personas.**
-
-Qué significa en la práctica:
-
-- 🏠 **Local-first** — la IA corre en tu teléfono o computador y funciona incluso sin internet.
-- 🔐 **Privacy-first** — tus datos no salen de tu control; no hay exfiltración posible.
-- 🕊️ **Soberana** — código abierto (AGPL-3.0) y portable: si el laboratorio desapareciera, tu código y tus datos siguen siendo tuyos.
-- 🔗 **Una red, no apps aisladas** — cada aplicación es un nodo de la red SWAL: comparten memoria (Xavier), sincronizan datos por el mesh (edge-mesh, CRDT sin servidores centrales) y se comunican entre sí.
-- 🆓 **Sin paywall** — el valor "Pro" es capacidad de red (tener tu nodo activo y conectado), nunca una suscripción.
-
-### La arquitectura: 4 capas compartidas
-
-| Capa | Proyecto | Qué resuelve |
-|---|---|---|
-| 🧠 Memoria agentic | Xavier | Agentes con memoria persistente que no olvidan el contexto |
-| 🌐 Red P2P (mesh) | edge-mesh | Sincronizar tus dispositivos sin pasar por la nube — el data plane de la red |
-| 🤖 Runtime de agentes | swal-agent-runner + [gestalt](https://github.com/iberi22/gestalt) | Ejecutar y orquestar agentes autónomos de forma local |
-| 🎨 Design system | [@swal/ui](https://github.com/iberi22/swal-ui) | Una sola identidad visual para todo el ecosistema |
-
-### 🔐 Acceso a los repos — por invitación
-
-Hasta que **el mesh (edge-mesh) conecte todas las apps del ecosistema**, los repos se mantienen en **acceso controlado por invitación**: las demos están públicas y funcionando, y el código se abre a medida que la red se completa. Solicita acceso por [Telegram](https://t.me/BeRi0n3) o [LinkedIn](https://www.linkedin.com/in/brahyansbr).
 
 ---
 
-## 🏆 Proyectos estrella
+**Full-Stack Deep Tech Systems Architect & AI Engineer**  
+Founder & Lead Developer of **BELA** and **SouthWest AI Labs (SWAL)**.
 
-> **Vis:** 🔒 acceso por invitación (backlog y docs vía invitación) · 🔓 público.
-> Cada proyecto con: **🌐 Demo** (visualizarlo) · **📋 Backlog** · **📚 Docs** · **📦 Repo**.
-
-| Proyecto | Stack | Vis | 🌐 Demo | 📋 Backlog | 📚 Docs | 📦 Repo |
-|---|---|---|---|---|---|---|
-| **SaberParaTodos** (WorldExams) — exámenes de práctica para 16+ países. *Resuelve: preparación académica gratuita y accesible.* | Astro·Svelte·TS | 🔒 | [Live](https://saberparatodos.space) | — | — | [Invitación](https://t.me/BeRi0n3) |
-| **Shelf** — inventario + POS offline-first con sync P2P (CRDT). *Resuelve: vender sin internet estable ni caja costosa.* | React 19·TS | 🔒 | [Live](https://estante-inventario.vercel.app) | — | — | [Invitación](https://t.me/BeRi0n3) |
-| **Isar Agent Memory** — memoria de agente en Dart (grafos, embeddings). *Resuelve: memoria offline-first para apps Flutter.* | Dart | 🔓 | [pub.dev](https://pub.dev/packages/isar_agent_memory) | [Issues](https://github.com/iberi22/isar_agent_memory/issues) | [Docs](https://github.com/iberi22/isar_agent_memory/tree/main/docs) | [Repo](https://github.com/iberi22/isar_agent_memory) |
-| **Hosteler-IA** — gestión de servicios de campo (FSM) con IA y offline. *Resuelve: coordinar técnicos y órdenes en terreno.* | TS·React | 🔒 | [Live](https://hosteler-ia-mu.vercel.app) | — | — | [Invitación](https://t.me/BeRi0n3) |
-| **OrionHealth** — asistente de salud privacy-first con SSI on-device. *Resuelve: salud con tus datos en tu dispositivo.* | Flutter·Dart | 🔓 | PWA en curso | [Issues](https://github.com/iberi22/OrionHealth/issues) | [Docs](https://github.com/iberi22/OrionHealth/tree/main/docs) | [Repo](https://github.com/iberi22/OrionHealth) |
-| **TikTokBoost** — gestor de contenido y métricas TikTok. *Resuelve: planificar y medir contenido sin herramientas caras.* | TS | 🔒 | [Live](https://tiktboost.vercel.app) | — | — | [Invitación](https://t.me/BeRi0n3) |
-| **GOS** — estándar abierto gastronómico. *Resuelve: documentar recetas de forma estructurada e interoperable.* | Astro | 🔓 | — | [Issues](https://github.com/iberi22/gastronomic-open-standard-GOS/issues) | [Docs](https://github.com/iberi22/gastronomic-open-standard-GOS/tree/main/docs) | [Repo](https://github.com/iberi22/gastronomic-open-standard-GOS) |
-| **Portfolio Personal** — mi web personal y de proyectos. | Svelte | 🔓 | [Live](https://portfolio-iberi22.vercel.app) | [Issues](https://github.com/iberi22/portfolio-iberi22/issues) | — | [Repo](https://github.com/iberi22/portfolio-iberi22) |
-| **SismoCheck** — Triaje Estructural Post-Terremoto con IA. *Resuelve: inspección técnica post-sismo en 15 min (ATC-20). (Nota: app independiente, no parte de SWAL).* | React 19·TS | 🔓 | [Live](https://sismocheck-evaluaci-n-r-pida-post-sismo-dossier-a-138396941132.us-east1.run.app/) | — | — | — |
-
-<details>
-<summary><b>🛠️ SismoCheck: Especificaciones Técnicas y Detalles</b></summary>
-
-<br>
-
-**SismoCheck | Triaje Estructural Post-Terremoto con IA**  
-PWA cívica y 100% offline que guía una inspección técnica de 15 minutos tras un sismo. Aplica los criterios forenses de ATC-20 y NSR-10 para clasificar el daño en columnas, fachadas y tabiques mediante semáforos de habitabilidad (Verde/Amarillo/Rojo), integrando geolocalización, análisis visual asistido por IA y generación de informes técnicos imprimibles para peritos estructuristas. *(Nota: Esta app es independiente y no hace parte de la red de SWAL).*
-
-### 🛠️ Especificaciones Técnicas
-- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS.
-- **Desarrollo:** Vibe-coded y prototipado mediante Google AI Studio (Build) con Gemini 2.0 Flash.
-- **Arquitectura:** PWA 100% Offline-First, Service Workers (Workbox), almacenamiento IndexedDB.
-- **Inteligencia Artificial:**
-  - Inferencia local en el borde (WebGPU / Heurística forense ATC-20).
-  - Integración multimodal Cloud opcional con Google Gemini Flash API (BYOK).
-- **APIs Web:** Geolocation API, MediaDevices Camera API, HTML5 Canvas (calibración de escala métrica).
-- **Seguridad & Privacidad:** Sin recolección de datos en servidores externos; todas las evidencias se procesan y almacenan en el dispositivo.
-
-</details>
-
-### 🌱 En desarrollo — próximos lanzamientos de la red
-
-`Veedur-IA` · `Gara-G` · `Nido` · `Software Factory` · `SWAL Agent Runner` · `Core SWAL PWA` · `Personal Assistant`
-
-## ⚙️ Cómo trabajamos — el proceso es el producto
-
-SWAL se construye con un flujo abierto, verificable y replicable (protocolo GitCore), que cualquier agente o humano puede seguir:
-
-| Paso | Regla |
-|---|---|
-| **1 issue = 1 rama = 1 PR** | Issues con criterios de aceptación verificables; commits `type(scope): descripción (closes #N)` |
-| **Verificación antes del merge** | `fmt` + `clippy` + tests + pipeline de verificación — un PR con checks rojos NO se mergea |
-| **Nada de humo** | Una feature solo se marca "done" con pruebas reales en verde, no por declaración |
-| **Waves autónomas** | Agentes (Jules, Codex, OpenCode) ejecutan issues con AC verificables; el merge lo valida un humano |
-| **Cero secretos** | `gitleaks` en CI; licencia AGPL-3.0-only en todo el ecosistema |
-
-Cada repo que se abre al público pasa un checklist previo (README + LICENSE + CONTRIBUTING + SECURITY + .gitignore + AGENTS.md) y las aperturas son graduales y documentadas. El proceso completo está definido en la *Guía de Colaboración SWAL* (v1.0).
+I design and build **local-first, privacy-first AI infrastructure & decentralized networks** end-to-end:
+- **Systems & Core:** Rust, NixOS, Docker, WebGPU (wgpu), Linux kernel & multi-agent swarms.
+- **Data & Protocol:** P2P CRDT mesh networks (edge-mesh), semantic cognitive memory (Xavier), post-quantum crypto (ML-DSA-65).
+- **Mobile & Cross-Platform:** Dart / Flutter, Flutter Rust Bridge, SQLite-vec.
+- **Web & Interface:** Astro 6, Svelte 5 (@swal/ui Hive Dark), Tailwind CSS 4, TypeScript, React 19.
 
 ---
 
-## 📊 Reality check
+## 🏢 Corporate & Organization Structure
 
-| Métrica | Valor |
-|---|---|
-| Ecosistema | 100 repos en [github.com/iberi22](https://github.com/iberi22) (23 públicos) |
-| Apps con demo en vivo | 6 |
-| Paquete publicado | [isar_agent_memory](https://pub.dev/packages/isar_agent_memory) en pub.dev |
-| Licencias | AGPL-3.0 apps · MIT librerías |
+- **BELA (Colombia):** The parent technology company and owner of the entire **SWAL** (SouthWest AI Labs) ecosystem.
+- **tripro.cl (Chile):** Chilean enterprise subsidiary, strategic co-operating partner, and client of BELA — powering industrial deployments including **[ManteniApp](https://tripro.cl/manteniapp)**.
+- **SouthWest AI Labs (SWAL):** Open-source deep-tech research lab and decentralized software network.
+- **Founder & Lead Developer:** **Brahyan Belalcázar (@iberi22 / "ElBeRi")** — Architecting and leading technical execution across all SWAL, BELA, and tripro.cl core platforms.
 
-<!-- ## 
-🔧 Cómo mantener este formato1. **Nuevo proyecto estrella** → añade una fila con demo + enlaces (público: backlog/docs/repo · privado: invitación).
-2. **Demo lista** → mueve el proyecto a la tabla principal.
-3. **Mesh completo / lanzamiento** → cambia 🔒 por 🔓 y completa los enlaces.
-4. Mantén las URLs verificadas (un `curl -I` antes de subir cambios). Ningún enlace del README debe dar 404.
+---
 
--->
+## 🌎 SouthWest AI Labs (SWAL) — Core Vision & Architecture
 
-## 🔗 Find me
+> **"AI should live on YOUR device and inside community networks, not trapped in centralized corporate data centers."**
 
-- **Lab:** [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs) · **Sitio del lab:** [southwest-ai-labs.github.io](https://southwest-ai-labs.github.io)
-- **Portfolio personal:** [iberi22.github.io/portfolio-iberi22](https://iberi22.github.io/portfolio-iberi22) · espejo: [portfolio-iberi22.vercel.app](https://portfolio-iberi22.vercel.app)
-- **CV (1 página):** [CV-Brahyan-Belalcazar.pdf](docs/CV-Brahyan-Belalcazar.pdf)
-- **LinkedIn:** [in/brahyansbr](https://www.linkedin.com/in/brahyansbr)
-- **Telegram:** [@BeRi0n3](https://t.me/BeRi0n3) — abierto a colaboraciones, roles y proyectos con impacto real.
+SWAL is an open-source deep-tech lab founded on the principle that digital sovereignty, private computation, and local-first software are fundamental human rights.
+
+### The 4 Canonical Unified Cores:
+1. 🧠 **Agentic Memory Core ([Xavier](https://github.com/iberi22/xavier)):** Cognitive multi-tier vector store, GraphRAG, and persistent episodic knowledge.
+2. 🌐 **P2P Data Plane ([edge-mesh](https://github.com/iberi22/edge-mesh)):** Decentralized CRDT synchronization with post-quantum security and offline tolerance.
+3. 🤖 **Autonomous Agent Runner (swal-agent-runner + [Gestalt](https://github.com/iberi22/gestalt)):** Local multi-agent execution, VFS sandboxing, and autonomous task waves.
+4. 🎨 **Shared Design System ([@swal/ui](https://github.com/iberi22/swal-ui)):** Svelte 5 design system powered by the Hive Dark design tokens.
+
+---
+
+## 🏆 Flagship Projects & Live Deployments
+
+| Project | Description | Stack | Status | Links |
+|---|---|---|:---:|---|
+| **[ManteniApp](https://tripro.cl/manteniapp)** | Industrial Field Service Management (FSM) SaaS with AI, digital sign-offs & offline PWA. Co-operated with **tripro.cl** in Chile. | TS · PWA · Python · PostgreSQL | 🚀 **Live** | [tripro.cl/manteniapp](https://tripro.cl/manteniapp) · [Repo](https://github.com/iberi22/manteniapp) |
+| **[SaberParaTodos (WorldExams)](https://saberparatodos.space)** | Decentralized free educational testing platform for 16+ countries with local AI evaluations. | Astro · Svelte 5 · TS | 🚀 **Live** | [saberparatodos.space](https://saberparatodos.space) · [Repo](https://github.com/world-exams/world-exams.github.io) |
+| **[Shelf](https://estante-inventario.vercel.app)** | Offline-first inventory and POS system with peer-to-peer CRDT sync. Sell anywhere without cloud dependency. | React 19 · TS · Yjs | 🚀 **Live** | [Live Demo](https://estante-inventario.vercel.app) · [Repo](https://github.com/iberi22/shelf) |
+| **[OrionHealth](https://github.com/iberi22/OrionHealth)** | Encrypted personal health tracking ecosystem with on-device Self-Sovereign Identity (SSI). | Flutter · Dart · SQLite | 🔓 **Public** | [Issues](https://github.com/iberi22/OrionHealth/issues) · [Repo](https://github.com/iberi22/OrionHealth) |
+| **[Isar Agent Memory](https://pub.dev/packages/isar_agent_memory)** | High-performance semantic memory engine for Flutter & Dart applications. | Dart · pub.dev | 📦 **Published** | [pub.dev](https://pub.dev/packages/isar_agent_memory) · [Repo](https://github.com/iberi22/isar_agent_memory) |
+| **[Xavier](https://github.com/iberi22/xavier)** | Cognitive memory engine and multi-agent knowledge graph runtime in Rust. | Rust · Axum · SQLite-vec | 🔓 **Public** | [Issues](https://github.com/iberi22/xavier/issues) · [Repo](https://github.com/iberi22/xavier) |
+| **[SWAL Files](https://github.com/iberi22/swal-files)** | GPU-accelerated (WGPU) minimalist agentic file manager in native Rust with macOS QuickLook. | Rust · WGPU · Tokio | 🔓 **Public** | [Repo](https://github.com/iberi22/swal-files) |
+| **[SWAL Vault](https://github.com/iberi22/swal-vault)** | Self-sovereign identity and passkey manager in Flutter with Xavier Clavis integration. | Flutter · Rust FFI | 🔒 **Active** | [Repo](https://github.com/iberi22/swal-vault) |
+| **[TikTokBoost](https://tiktboost.vercel.app)** | Local-first TikTok analytics and automated video generation studio. | Svelte 5 · Astro · TS | 🚀 **Live** | [Live Demo](https://tiktboost.vercel.app) · [Repo](https://github.com/iberi22/tiktboost) |
+| **[GOS](https://github.com/iberi22/gastronomic-open-standard-GOS)** | Gastronomic Open Standard for open culinary knowledge and recipe schemas. | Astro · JSON Schema | 🔓 **Public** | [Repo](https://github.com/iberi22/gastronomic-open-standard-GOS) |
+| **[Personal Portfolio](https://portfolio-iberi22.vercel.app)** | BELA & SWAL deep-tech portfolio showcase in Astro 6 + Svelte 5. | Astro 6 · Svelte 5 | 🚀 **Live** | [portfolio-iberi22.vercel.app](https://portfolio-iberi22.vercel.app) |
+| **[SismoCheck](https://sismocheck-evaluaci-n-r-pida-post-sismo-dossier-a-138396941132.us-east1.run.app/)** | Post-earthquake structural triage PWA based on ATC-20 forensic criteria with on-device AI. | React 19 · WebGPU | 🚀 **Live** | [Live App](https://sismocheck-evaluaci-n-r-pida-post-sismo-dossier-a-138396941132.us-east1.run.app/) |
+
+---
+
+## ⚙️ Development Philosophy: The Process IS the Product
+
+All SWAL and BELA projects are built following the rigorous **GitCore Protocol**:
+1. **1 Issue = 1 Branch = 1 PR:** Strict atomicity and micro-fragmentation.
+2. **Verifiable Acceptance Criteria (AC):** Zero speculation — every PR must pass automated CI checks (, , unit & E2E tests).
+3. **No Secrets & Open Licenses:** Enterprise protection on business cores, AGPL-3.0 on community apps, MIT on shared client libraries.
+
+---
+
+## 🔗 Connect & Collaborate
+
+- **Parent Organization:** BELA (Colombia) · Partner: [tripro.cl](https://tripro.cl) (Chile)
+- **Lab Organization:** [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs)
+- **Personal Portfolio:** [portfolio-iberi22.vercel.app](https://portfolio-iberi22.vercel.app) · [iberi22.github.io](https://iberi22.github.io)
+- **LinkedIn:** [linkedin.com/in/brahyansbr](https://www.linkedin.com/in/brahyansbr)
+- **Telegram:** [@BeRi0n3](https://t.me/BeRi0n3)
