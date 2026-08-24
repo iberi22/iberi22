@@ -7,57 +7,66 @@ import '../styles/global.css';
 const projects = [
   {
     id: "PRJ_01",
-    title: "SaberParaTodos",
-    url: "https://saberparatodos.space",
-    tag: "Educational platform · 16+ countries",
-    tech: "Astro, Svelte, TailwindCSS, Supabase",
-    desc: "Exámenes de práctica gratuitos y accesibles. Educación para todos.",
+    title: "ManteniApp",
+    url: "https://tripro.cl/manteniapp",
+    tag: "Industrial FSM SaaS · Chile",
+    tech: "TypeScript, PWA, Python, PostgreSQL",
+    desc: "SaaS de gestión de servicios de campo con IA, aprobaciones digitales y modo offline. Co-operado con tripro.cl.",
   },
   {
     id: "PRJ_02",
-    title: "Shelf",
-    url: "https://estante-inventario.vercel.app",
-    tag: "P2P inventory & POS",
-    tech: "React 19, TypeScript, P2P (CRDT)",
-    desc: "Inventario offline-first con sincronización P2P y cifrado post-quantum.",
+    title: "SaberParaTodos",
+    url: "https://saberparatodos.space",
+    tag: "Educational platform · 16+ countries",
+    tech: "Astro, Svelte 5, TailwindCSS",
+    desc: "Exámenes de práctica gratuitos y accesibles para 16+ países, con evaluaciones de IA local.",
   },
   {
     id: "PRJ_03",
+    title: "Shelf",
+    url: "https://estante-inventario.vercel.app",
+    tag: "P2P inventory & POS",
+    tech: "React 19, TypeScript, Yjs (CRDT)",
+    desc: "Inventario y POS offline-first con sincronización peer-to-peer. Vende sin depender de la nube.",
+  },
+  {
+    id: "PRJ_04",
     title: "Hosteler-IA",
     url: "https://hosteler-ia-mu.vercel.app",
-    tag: "Field service agent",
+    tag: "Field service management",
     tech: "TypeScript, React, IA",
     desc: "Gestión de servicios de campo con IA, aprobaciones digitales y modo offline.",
   },
   {
-    id: "PRJ_04",
+    id: "PRJ_05",
     title: "TikTokBoost",
     url: "https://tiktboost.vercel.app",
     tag: "Content analytics engine",
-    tech: "TypeScript",
-    desc: "Gestor de contenido y métricas TikTok.",
+    tech: "Svelte 5, Astro, TypeScript",
+    desc: "Analítica local-first y estudio automatizado de generación de contenido.",
   },
   {
-    id: "PRJ_05",
-    title: "OrionHealth",
-    url: "https://github.com/iberi22/OrionHealth",
-    tag: "Medical diagnostic copilot",
-    tech: "Flutter, Dart",
-    desc: "Asistente de salud privacy-first con SSI on-device y estándares médicos offline.",
+    id: "PRJ_06",
+    title: "SismoCheck",
+    url: "https://sismocheck-evaluaci-n-r-pida-post-sismo-dossier-a-138396941132.us-east1.run.app/",
+    tag: "Structural triage · ATC-20",
+    tech: "React 19, WebGPU, IA on-device",
+    desc: "Triage estructural post-terremoto con criterios forenses ATC-20 e IA en el dispositivo.",
   },
 ];
 
 const openSource = [
-  { name: "Xavier", desc: "Memoria Agentic · apertura próximamente", accent: true },
-  { name: "Gestalt", desc: "Core Orchestrator", url: "https://github.com/iberi22/gestalt", accent: false },
-  { name: "swal-ui", desc: "Component Library", url: "https://github.com/iberi22/swal-ui", accent: false },
-  { name: "Isar Agent Memory", desc: "Vector Storage", url: "https://github.com/iberi22/isar_agent_memory", accent: false },
-  { name: "SWAL Agent Rust", desc: "Rust Agent Runtime", url: "https://github.com/iberi22/swal-agent-rust", accent: false },
-  { name: "MCP Database Server", desc: "Context Protocol DB", url: "https://github.com/iberi22/mcp-database-server", accent: false },
-  { name: "Skills", desc: "Agent Skills Registry", url: "https://github.com/iberi22/skills", accent: false },
+  { name: "Xavier", desc: "Memoria cognitiva para agentes IA", accent: true },
+  { name: "Gestalt", desc: "Orquestador multi-agente (Rust)", url: "https://github.com/iberi22/gestalt", accent: false },
+  { name: "edge-mesh", desc: "Redes mesh P2P + CRDT", url: "https://github.com/iberi22/edge-mesh", accent: false },
+  { name: "swal-ui", desc: "Design system Svelte 5", url: "https://github.com/iberi22/swal-ui", accent: false },
+  { name: "Isar Agent Memory", desc: "Memoria semántica Flutter/Dart", url: "https://github.com/iberi22/isar_agent_memory", accent: false },
+  { name: "swal-local", desc: "Librería TS zero-dep local-first", url: "https://github.com/iberi22/swal-local", accent: false },
+  { name: "obscura", desc: "Headless browser para agentes IA", url: "https://github.com/iberi22/obscura", accent: false },
+  { name: "Skills", desc: "Registro de skills para agentes", url: "https://github.com/iberi22/skills", accent: false },
 ];
 
-const stack = ["Rust", "TypeScript", "Dart/Flutter", "Astro", "Python", "React", "PostgreSQL", "Supabase", "Svelte", "P2P", "WebAssembly", "NixOS"];
+const stack = ["Rust", "TypeScript", "Dart/Flutter", "Astro", "Python", "React", "Svelte 5", "PostgreSQL", "Supabase", "Agent Orchestration", "PWA / offline-first", "NixOS"];
 ---
 
 <Layout>
@@ -78,12 +87,22 @@ const stack = ["Rust", "TypeScript", "Dart/Flutter", "Astro", "Python", "React",
     </Reveal>
     <Reveal delay={160}>
       <p class="font-body-lg text-body-lg text-[#7e8b8f] max-w-2xl leading-relaxed border-l-2 border-[#3c494c]/50 pl-6">
-        Full-stack developer &amp; AI engineer. Fundador de SouthWest AI Labs (SWAL).
-        Construyo software open-source, local-first y soberano — la IA debe correr en tu hardware.
+        Full-stack developer &amp; AI orchestration engineer — <span class="text-[#22d3ee]">disponible para trabajar</span>.
+        Entrego software en producción con una tubería de desarrollo orquestada por IA bajo protocolos estrictos:
+        más velocidad sin sacrificar calidad, tests ni mantenimiento a largo plazo.
       </p>
     </Reveal>
     <Reveal delay={240}>
       <div class="mt-12 flex flex-wrap gap-4">
+        <a
+          href="https://portfolio-iberi22.vercel.app/agenda"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-[#22d3ee] text-[#0a0a0b] px-8 py-3 font-mono-label text-mono-label hover:bg-[#67e8f9] transition-colors flex items-center gap-2 rounded"
+        >
+          <span class="material-symbols-outlined text-[18px]">event_available</span>
+          Agendar sesión técnica
+        </a>
         <a
           href="https://github.com/iberi22"
           target="_blank"
@@ -203,19 +222,19 @@ const stack = ["Rust", "TypeScript", "Dart/Flutter", "Astro", "Python", "React",
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       {[
         {
-          icon: "dns",
-          title: "Local-first",
-          text: "Ejecución en el edge. Modelos optimizados para inferencia en hardware de consumo. Latencia ultra baja sin dependencia de red externa.",
+          icon: "bolt",
+          title: "Entrega orquestada por IA",
+          text: "Olas de agentes autónomos implementan features en paralelo bajo mis protocolos de arquitectura, revisión y testing. Velocidad de startup con disciplina de producción.",
         },
         {
-          icon: "shield_lock",
-          title: "Privacy-first",
-          text: "Tus datos, tus pesos. Arquitecturas que garantizan aislamiento criptográfico de contextos y memorias agenticas (Xavier).",
+          icon: "verified",
+          title: "Calidad verificable",
+          text: "Cada cambio pasa por CI automatizado, tests unitarios y E2E, y revisión humana antes del merge. Un issue, una rama, un PR. Cero especulación.",
         },
         {
-          icon: "hub",
-          title: "Soberano",
-          text: "Protocolos P2P, código abierto AGPL-3.0 y gobernanza transparente. Sin lock-in de nube ni dependencia de terceros.",
+          icon: "eco",
+          title: "Sostenibilidad técnica",
+          text: "Design systems compartidos, librerías reutilizables y análisis de recursos que mantienen bajo el costo de mantenimiento a largo plazo.",
         },
       ].map((p, i) => (
         <Reveal delay={i * 100}>
@@ -231,12 +250,24 @@ const stack = ["Rust", "TypeScript", "Dart/Flutter", "Astro", "Python", "React",
     </div>
 
     <Reveal delay={150}>
-      <blockquote class="mt-16 max-w-3xl mx-auto text-center">
-        <p class="font-headline-lg text-headline-lg text-[#d8d5d0] leading-snug">
-          "La premisa principal es la comodidad de todos los seres humanos en la Tierra, brindando tecnología segura, abierta e inteligente."
+      <div class="mt-16 max-w-3xl mx-auto text-center border border-[#3c494c]/20 bg-[#131314] rounded p-10">
+        <span class="material-symbols-outlined text-[#22d3ee] text-3xl mb-4">handshake</span>
+        <p class="font-headline-md text-headline-md text-[#d8d5d0] leading-snug mb-4">
+          ¿Tu equipo quiere avanzar más rápido, de forma sostenible?
         </p>
-        <cite class="block mt-6 font-mono-label text-mono-label not-italic text-[#7e8b8f]">— Brahyan Belalcazar "ElBeRi"</cite>
-      </blockquote>
+        <p class="font-body-md text-body-md text-[#7e8b8f] mb-8">
+          Sesiones de asesoría técnica: análisis y unificación de tus recursos de desarrollo
+          (IA, automatización, infraestructura) para optimizar tus proyectos a largo plazo.
+        </p>
+        <a
+          href="https://portfolio-iberi22.vercel.app/agenda"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-[#22d3ee] text-[#0a0a0b] px-8 py-3 font-mono-label text-mono-label hover:bg-[#67e8f9] transition-colors rounded"
+        >
+          Agendar sesión técnica →
+        </a>
+      </div>
     </Reveal>
   </section>
 </Layout>
