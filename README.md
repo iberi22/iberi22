@@ -11,7 +11,7 @@
 
 **Full-Stack Software Engineer & AI Orchestration Specialist** — available for hire.
 
-I ship production software end-to-end: web platforms, mobile apps, and the AI agent infrastructure that accelerates their development. Everything listed below is **live and clickable** — no vaporware.
+I ship production software end-to-end: web platforms, mobile apps, and the AI agent infrastructure that accelerates their development.
 
 ## How I work
 
@@ -44,7 +44,6 @@ What this means in practice:
 | **OrionHealth** | Privacy-first health assistant: on-device SSI (DID, W3C VCs), offline medical standards (ICD-10, LOINC, RxNorm). | [Repo](https://github.com/iberi22/OrionHealth) |
 | **swal-ui** | Svelte 5 design system with theme tokens, reused across every web app above. | [Repo](https://github.com/iberi22/swal-ui) |
 | **swal-local** | Zero-dependency TypeScript library: transactional IndexedDB, PBKDF2 auth, Web Speech TTS/STT, Ollama client. | [Repo](https://github.com/iberi22/swal-local) |
-| **obscura** | Headless browser for AI agents and web scraping. | [Repo](https://github.com/iberi22/obscura) |
 | **skills** | Unified skill repository for AI coding agents (SKILL.md v2 format + registry). | [Repo](https://github.com/iberi22/skills) |
 
 More public work: [swal-desktop](https://github.com/iberi22/swal-desktop) (NixOS + Hyprland AI workspace) · [swal-files](https://github.com/iberi22/swal-files) (WGPU file manager) · [photon-core](https://github.com/iberi22/photon-core) (optical data encoding research).
