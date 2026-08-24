@@ -1,3 +1,4 @@
+<img width="430" height="441" alt="image" src="https://github.com/user-attachments/assets/efb98448-bfb6-4e02-b127-b23b19ae8ba9" />
 # Brahyan Belalcázar — @iberi22 · "ElBeRi" 👋
 
 [![Open to work](https://img.shields.io/badge/Open%20to%20work-Yes-brightgreen?style=flat-square)](https://www.linkedin.com/in/brahyansbr)
@@ -27,9 +28,6 @@ I design and build **local-first, privacy-first AI infrastructure & decentralize
 > **"Empower humanity by concentrating, preserving, refining, and protecting human collective knowledge using 100% deterministic tooling for management, and decentralizing it through Xavier and sovereign P2P networks so it can never be altered or erased."**
 
 - **SouthWest AI Labs (SWAL):** Open community deep-tech research lab and decentralized software network.
-- **Founder & Lead Architect:** **Brahyan Belalcázar (@iberi22 / "ElBeRi")** — Architecting and leading technical execution across the SWAL decentralized mesh.
-- **Strategic Enterprise Partner:** **[tripro.cl](https://tripro.cl)** (Chile) — Enterprise engineering partner deploying industrial field software (**[ManteniApp](https://tripro.cl/manteniapp)**) powered by SWAL local-first architecture.
-
 ---
 
 ## 🌎 SouthWest AI Labs (SWAL) — Core Vision & Architecture
