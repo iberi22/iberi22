@@ -1,4 +1,3 @@
-<img width="430" height="441" alt="image" src="https://github.com/user-attachments/assets/efb98448-bfb6-4e02-b127-b23b19ae8ba9" />
 # Brahyan Belalcázar — @iberi22 · "ElBeRi" 👋
 
 [![Open to work](https://img.shields.io/badge/Open%20to%20work-Yes-brightgreen?style=flat-square)](https://www.linkedin.com/in/brahyansbr)
