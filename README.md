@@ -45,8 +45,9 @@ What this means in practice:
 | **swal-ui** | Svelte 5 design system with theme tokens, reused across every web app above. | [Repo](https://github.com/iberi22/swal-ui) |
 | **swal-local** | Zero-dependency TypeScript library: transactional IndexedDB, PBKDF2 auth, Web Speech TTS/STT, Ollama client. | [Repo](https://github.com/iberi22/swal-local) |
 | **skills** | Unified skill repository for AI coding agents (SKILL.md v2 format + registry). | [Repo](https://github.com/iberi22/skills) |
+| **NIDO** | Intelligent home administration: plans, rules, measurements for any dwelling, plus a private verified P2P rental network. | [Repo](https://github.com/iberi22/nido) |
 
-More public work: [swal-desktop](https://github.com/iberi22/swal-desktop) (NixOS + Hyprland AI workspace) · [swal-files](https://github.com/iberi22/swal-files) (WGPU file manager) · [photon-core](https://github.com/iberi22/photon-core) (optical data encoding research).
+More public work: [swal-desktop](https://github.com/iberi22/swal-desktop) (NixOS + Hyprland AI workspace) · [swal-files](https://github.com/iberi22/swal-files) (WGPU file manager) · [photon-core](https://github.com/iberi22/photon-core) (optical data encoding research) · [swal-portal](https://github.com/iberi22/swal-portal) (SWAL — Sovereign Decentralized AI Network portal).
 
 ## SouthWest AI Labs (SWAL)
 
