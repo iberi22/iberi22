@@ -9,9 +9,19 @@
 
 ---
 
-**Full-Stack Software Engineer & AI Orchestration Specialist** — available for hire.
+**Full-Stack Software Engineer — 10+ years shipping production software** — *available for hire*  \
+Founder & Creator of **SouthWest AI Labs (SWAL)**.
 
-I ship production software end-to-end: web platforms, mobile apps, and the AI agent infrastructure that accelerates their development.
+I turn real business needs into software that runs in production: web platforms, mobile apps published to stores, and custom systems for the industrial (mining), tax, publishing, and e-commerce sectors — as both a freelancer and part of engineering teams, owning everything from requirements analysis to deployment and support.
+
+**My edge today: AI-accelerated engineering.** I integrate LLMs and coding agents into the development cycle to compress it without losing quality — simulating and validating architecture before writing code, automating the design → build → test → review → ship loop, with human supervision at every step. This lets me deliver complete products with small-team speed and big-team solidity.
+
+The open source below (semantic agent memory, P2P mesh, multi-agent orchestration) is where I pressure-test those techniques in public.
+
+- **Systems & Core:** Rust, NixOS, Docker, WebGPU (wgpu), Linux kernel & multi-agent swarms.
+- **Data & Protocol:** P2P CRDT mesh networks (edge-mesh), semantic cognitive memory (Xavier), post-quantum crypto (ML-DSA-65).
+- **Mobile & Cross-Platform:** Dart / Flutter, Flutter Rust Bridge, SQLite-vec.
+- **Web & Interface:** Astro 6, Svelte 5 (@swal/ui Hive Dark), Tailwind CSS 4, TypeScript, React 19.
 
 ## How I work
 
