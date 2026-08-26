@@ -37,7 +37,6 @@ What this means in practice:
 
 | Project | What it is | Stack | Links |
 |---|---|---|---|
-| **[ManteniApp](https://tripro.cl/manteniapp)** | Industrial Field Service Management SaaS with AI assistance, digital sign-offs and offline-first PWA. Co-operated with tripro.cl (Chile). | TypeScript · PWA · PostgreSQL | 🚀 [Live](https://tripro.cl/manteniapp) |
 | **[SaberParaTodos](https://saberparatodos.space)** | Free practice-testing platform serving 16+ countries, with on-device AI evaluations. | Astro · Svelte 5 · TS | 🚀 [Live](https://saberparatodos.space) · [Repo](https://github.com/world-exams/world-exams.github.io) |
 | **[Shelf](https://estante-inventario.vercel.app)** | Offline-first inventory & POS with peer-to-peer CRDT sync — sell anywhere, no cloud dependency. | React 19 · TS · Yjs | 🚀 [Live](https://estante-inventario.vercel.app) |
 | **[Hosteler-IA](https://hosteler-ia-mu.vercel.app)** | Field-service management with AI approvals and offline mode. | TS · React | 🚀 [Live](https://hosteler-ia-mu.vercel.app) |
