@@ -10,7 +10,7 @@
 ---
 
 **Full-Stack Software Engineer — 10+ years shipping production software** — *available for hire*  \
-Founder & Creator of **SouthWest AI Labs (SWAL)**.
+
 
 I turn real business needs into software that runs in production: web platforms, mobile apps published to stores, and custom systems for the industrial (mining), tax, publishing, and e-commerce sectors — as both a freelancer and part of engineering teams, owning everything from requirements analysis to deployment and support.
 
