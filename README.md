@@ -9,23 +9,24 @@
 
 ---
 
-**Full-Stack Software Engineer — 10+ years shipping production software** — *available for hire*  \
+**Senior Full-Stack Developer — 10+ years shipping production software** — *available for hire*  
 Founder & Creator of **SouthWest AI Labs (SWAL)**.
 
-I turn real business needs into software that runs in production: web platforms, mobile apps published to stores, and custom systems for the industrial (mining), tax, publishing, and e-commerce sectors — as both a freelancer and part of engineering teams, owning everything from requirements analysis to deployment and support.
+I've built software across sectors with very different business models: industrial mining and electricity (Tripro), tax and legal advisory (Restrepo y Londono), B2B/B2C e-commerce (Siesa Ecommerce), ERP and interactive signage (LogicalSoft), and publishing (Los Tres Editores). Each sector taught me different architectures, constraints, and engineering techniques — and that breadth is what lets me take complex features to full functionality.
 
-**My edge today: AI-accelerated engineering.** I integrate LLMs and coding agents into the development cycle to compress it without losing quality — simulating and validating architecture before writing code, automating the design → build → test → review → ship loop, with human supervision at every step. This lets me deliver complete products with small-team speed and big-team solidity.
+**My core stack is JavaScript and PHP**, mastered at senior level over the years: from custom WordPress plugins and REST APIs to complete Node.js architectures. Today I combine that track record with AI-assisted engineering to accelerate iterations without sacrificing quality.
 
-The open source below (semantic agent memory, P2P mesh, multi-agent orchestration) is where I pressure-test those techniques in public.
+The open source below is where I live my passion for open development — software that manages and preserves humanity's information in a decentralized way, so it stays free and doesn't get encapsulated only in LLMs:
 
-- **Systems & Core:** Rust, NixOS, Docker, WebGPU (wgpu), Linux kernel & multi-agent swarms.
-- **Data & Protocol:** P2P CRDT mesh networks (edge-mesh), semantic cognitive memory (Xavier), post-quantum crypto (ML-DSA-65).
-- **Mobile & Cross-Platform:** Dart / Flutter, Flutter Rust Bridge, SQLite-vec.
-- **Web & Interface:** Astro 6, Svelte 5 (@swal/ui Hive Dark), Tailwind CSS 4, TypeScript, React 19.
+- **Web & Interface:** JavaScript, PHP, TypeScript, React, Svelte 5, Astro 6, Tailwind CSS 4.
+- **Mobile & Cross-Platform:** Dart / Flutter, Flutter Rust Bridge, React Native, Expo.
+- **Data & Backend:** Node.js, Python, PostgreSQL, Supabase, WordPress ecosystem.
+- **Systems & Infra:** Rust, NixOS, Docker, PWA/offline-first, WebAssembly.
+- **AI & Agents:** LLM tooling, multi-agent orchestration, semantic memory (Xavier).
 
 ## How I work
 
-Every project here is built with an **AI-orchestrated engineering pipeline** that I designed: autonomous coding agents implement features under strict protocols for architecture, code review, testing, and integration that I define and enforce.
+Every project here is built with an **engineering pipeline** that combines senior-level web development with AI-assisted iteration: coding agents implement features under strict protocols for architecture, code review, testing, and integration that I define and enforce.
 
 What this means in practice:
 
@@ -60,13 +61,15 @@ More public work: [swal-desktop](https://github.com/iberi22/swal-desktop) (NixOS
 
 ## SouthWest AI Labs (SWAL)
 
-The research lab where my agent-infrastructure tools live: local-first memory engines, P2P mesh networking, and multi-agent orchestration runtimes — all built around one principle: **AI should run on your device, not in someone else's cloud.**
+The open-source lab where I build community-driven software for decentralized information preservation. The mission: manage and preserve humanity's information freely, so it doesn't get encapsulated only inside proprietary LLMs. Instead, we build a global logic for information recovery using projects like **Xavier** — persistent, local, semantic memory for AI agents.
+
+The principle: **AI should run on your device, not in someone else's cloud. Information belongs to humanity, not to any single company.**
 
 → [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs) · [Lab site](https://southwest-ai-labs.github.io)
 
 ## Tech stack
 
-`Rust` · `TypeScript` · `Dart/Flutter` · `React` · `Svelte 5` · `Astro` · `Python` · `PostgreSQL` · `Supabase` · `NixOS` · `Docker` · `PWA/offline-first` · `WebAssembly` · `LLM tooling & agent orchestration`
+`JavaScript` · `PHP` · `TypeScript` · `Node.js` · `React` · `Svelte 5` · `Astro` · `Python` · `Dart/Flutter` · `PostgreSQL` · `Supabase` · `WordPress` · `NixOS` · `Docker` · `Rust` · `PWA/offline-first` · `WebAssembly` · `LLM tooling & agent orchestration`
 
 ## Work with me
 
