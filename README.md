@@ -1,6 +1,6 @@
 # Brahyan Belalcázar — @iberi22
 
-[![Open to work](https://img.shields.io/badge/Open_to_work-Yes-brightgreen?style=flat-square)](https://portfolio-iberi22.vercel.app/agenda)
+[![Open to work](https://img.shields.io/badge/Open_to_work-Yes-brightgreen?style=flat-square)](https://iberi22.github.io/portfolio-iberi22/agenda)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-in%2Fbrahyansbr-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brahyansbr)
 [![Telegram](https://img.shields.io/badge/Telegram-@BeRi0n3-blue?style=flat-square&logo=telegram)](https://t.me/BeRi0n3)
 [![Email](https://img.shields.io/badge/Email-iberi22%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:iberi22@gmail.com)
@@ -72,7 +72,7 @@ The research lab where my agent-infrastructure tools live: local-first memory en
 
 Available for engineering leadership, systems architecture, and core development roles (contract or full-time). I also conduct **Technical Architecture & Agentic Infrastructure Audits**: analyzing existing codebases, developer workflows, local-first data pipelines, and CI/CD harnesses to implement high-throughput autonomous agent execution and deterministic delivery.
 
-- 📅 [Book a technical session](https://portfolio-iberi22.vercel.app/agenda)
+- 📅 [Book a technical session](https://iberi22.github.io/portfolio-iberi22/agenda)
 - 💼 [LinkedIn](https://www.linkedin.com/in/brahyansbr)
 - ✉️ iberi22@gmail.com
 - 💬 [@BeRi0n3](https://t.me/BeRi0n3) on Telegram
