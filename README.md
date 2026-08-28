@@ -9,12 +9,12 @@
 
 ---
 
-**Full-Stack Software Engineer — 10+ years shipping production software** — *available for hire*  \
+**Full-Stack & Systems Software Engineer — 10+ years engineering production systems** — *available for hire*  \
+Founder & Creator of **SouthWest AI Labs (SWAL)**.
 
+I engineer production-grade systems: distributed local-first architectures, low-latency cross-platform clients, and autonomous agent orchestration runtimes across industrial (mining/electrical), fiscal, editorial, and high-volume e-commerce sectors — owning the complete lifecycle from architectural modeling and protocol design to containerized deployment and performance profiling.
 
-I turn real business needs into software that runs in production: web platforms, mobile apps published to stores, and custom systems for the industrial (mining), tax, publishing, and e-commerce sectors — as both a freelancer and part of engineering teams, owning everything from requirements analysis to deployment and support.
-
-**My edge today: AI-accelerated engineering.** I integrate LLMs and coding agents into the development cycle to compress it without losing quality — simulating and validating architecture before writing code, automating the design → build → test → review → ship loop, with human supervision at every step. This lets me deliver complete products with small-team speed and big-team solidity.
+**AI-Accelerated Systems Engineering:** I integrate LLM runtimes and autonomous coding agent swarms directly into deterministic development pipelines. By formalizing architectural contracts, automating design → implementation → static analysis → E2E validation loops, and enforcing strict human verification gates, I deliver high-complexity software with verified test coverage and deterministic maintainability.
 
 ## 🤖 AI Agent Orchestration & How I Work
 
@@ -71,7 +71,7 @@ The research lab where my agent-infrastructure tools live: local-first memory en
 
 ## Work with me
 
-I'm actively looking for full-time, contract, or freelance roles — and I also offer **technical advisory sessions**: audits of your development resources (AI agents, automation, infrastructure) and a concrete plan to get startup-grade velocity out of your existing team and tools, sustainably.
+Available for engineering leadership, systems architecture, and core development roles (contract or full-time). I also conduct **Technical Architecture & Agentic Infrastructure Audits**: analyzing existing codebases, developer workflows, local-first data pipelines, and CI/CD harnesses to implement high-throughput autonomous agent execution and deterministic delivery.
 
 - 📅 [Book a technical session](https://portfolio-iberi22.vercel.app/agenda)
 - 💼 [LinkedIn](https://www.linkedin.com/in/brahyansbr)
