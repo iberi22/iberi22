@@ -17,20 +17,6 @@ A decade turning business constraints into production software: real-time indust
 
 👉 **[🔍 Explore Complete Portfolio, Architecture Deep-Dives & Project Metrics](https://iberi22.github.io/portfolio-iberi22/projects)**
 
----
-
-## 🏭 Production & Industry Experience (10+ Years)
-
-| Organization / Sector | Key Focus & Impact | Core Stack | Details |
-|---|---|---|---|
-| **[Tripro SPA (Chile)](https://iberi22.github.io/portfolio-iberi22/projects)**<br>*Mining & Industrial Services* | Real-time heavy machinery sensor telemetry, IoT ingestion pipelines, automated issue triage bots, and PWA platforms with Flow payments. | PostgreSQL · Next.js · React · Astro · Python · n8n · Node.js | [Deep Dive](https://iberi22.github.io/portfolio-iberi22/projects) |
-| **[Restrepo y Londoño / Smartax](https://iberi22.github.io/portfolio-iberi22/projects)**<br>*Fiscal & Legal Advisory* | REST API data consumption integration, technical compliance tuning & validation for official Google Play Store release; custom WordPress PHP plugin architecture. | REST API · Google Play Validation · PHP · WordPress Plugins · PDF Engine | [Deep Dive](https://iberi22.github.io/portfolio-iberi22/projects) |
-| **[Siesa Ecommerce / E-Solutions](https://iberi22.github.io/portfolio-iberi22/projects)**<br>*Enterprise B2B/B2C E-Commerce* | Production logistics dispatch calendar, Linux CentOS 7 LAMP infrastructure provisioning, automated CI/CD pipelines & VPN/SSL security hardening. | PHP (Yii2) · Angular · Linux CentOS · LAMP · CI/CD · MySQL | [Deep Dive](https://iberi22.github.io/portfolio-iberi22/projects) |
-| **[LogicalSoft](https://iberi22.github.io/portfolio-iberi22/projects)**<br>*ERP, Signage & Retail Analytics* | SIIP Móvil hybrid app on Play Store, 15+ operational UI modules, QR code access control, offline commercial census with IndexedDB & Electron desktop apps. | PHP · JavaScript · MySQL · ReactJS · Electron · Play Store · AWS/GCP | [Deep Dive](https://iberi22.github.io/portfolio-iberi22/projects) |
-| **[Los Tres Editores SAS](https://iberi22.github.io/portfolio-iberi22/projects)**<br>*Publishing & Large-Scale Print* | Advanced PostgreSQL stored procedures/triggers, Java EE CRUD services, automated dynamic PDF generation with FPDF/iReport & Debian server management. | PostgreSQL (Functions/Triggers) · Java EE · PHP · Debian Linux | [Deep Dive](https://iberi22.github.io/portfolio-iberi22/projects) |
-
----
-
 ## ⚡ Core Deep Tech & Autonomous Agent Ecosystem
 
 | System | Role & Architectural Function | Stack | Link |
