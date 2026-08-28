@@ -9,8 +9,7 @@
 
 ---
 
-**Full-Stack & Systems Software Engineer — 10+ years engineering production systems** — *available for hire*  \
-Founder & Creator of **SouthWest AI Labs (SWAL)**.
+**Full-Stack & Systems Software Engineer — 10+ years engineering production systems** — *available for hire*
 
 I engineer production-grade systems: distributed local-first architectures, low-latency cross-platform clients, and autonomous agent orchestration runtimes across industrial (mining/electrical), fiscal, editorial, and high-volume e-commerce sectors — owning the complete lifecycle from architectural modeling and protocol design to containerized deployment and performance profiling.
 
