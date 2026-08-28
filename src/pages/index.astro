@@ -7,14 +7,6 @@ import '../styles/global.css';
 const projects = [
   {
     id: "PRJ_01",
-    title: "ManteniApp",
-    url: "https://tripro.cl/manteniapp",
-    tag: "Industrial FSM SaaS · Chile",
-    tech: "TypeScript, PWA, Python, PostgreSQL",
-    desc: "SaaS de gestión de servicios de campo con IA, aprobaciones digitales y modo offline. Co-operado con tripro.cl.",
-  },
-  {
-    id: "PRJ_02",
     title: "SaberParaTodos",
     url: "https://saberparatodos.space",
     tag: "Educational platform · 16+ countries",
@@ -22,7 +14,7 @@ const projects = [
     desc: "Exámenes de práctica gratuitos y accesibles para 16+ países, con evaluaciones de IA local.",
   },
   {
-    id: "PRJ_03",
+    id: "PRJ_02",
     title: "Shelf",
     url: "https://estante-inventario.vercel.app",
     tag: "P2P inventory & POS",
@@ -30,20 +22,28 @@ const projects = [
     desc: "Inventario y POS offline-first con sincronización peer-to-peer. Vende sin depender de la nube.",
   },
   {
+    id: "PRJ_03",
+    title: "OrionHealth",
+    url: "https://github.com/iberi22/OrionHealth",
+    tag: "Medical diagnostic copilot",
+    tech: "Flutter, Dart, SQLite",
+    desc: "Asistente de salud privacy-first con SSI on-device y estándares médicos offline.",
+  },
+  {
     id: "PRJ_04",
-    title: "Hosteler-IA",
-    url: "https://hosteler-ia-mu.vercel.app",
-    tag: "Field service management",
-    tech: "TypeScript, React, IA",
-    desc: "Gestión de servicios de campo con IA, aprobaciones digitales y modo offline.",
+    title: "Veedur-IA",
+    url: "https://github.com/iberi22/VeedurIA",
+    tag: "Civic oversight & SECOP II",
+    tech: "Rust, Polars, Astro, Svelte 5",
+    desc: "Plataforma de inteligencia en contratación pública con análisis de licitaciones y detección de anomalías.",
   },
   {
     id: "PRJ_05",
-    title: "TikTokBoost",
-    url: "https://tiktboost.vercel.app",
-    tag: "Content analytics engine",
-    tech: "Svelte 5, Astro, TypeScript",
-    desc: "Analítica local-first y estudio automatizado de generación de contenido.",
+    title: "GARA-G",
+    url: "https://github.com/iberi22/gara-g",
+    tag: "DePIN Mobility & V2V Mesh",
+    tech: "Rust, Flutter, P2P, Polygon",
+    desc: "Red DePIN de movilidad y malla vehicular V2V con telemetría en tiempo real, copiloto de IA y mercado descentralizado.",
   },
   {
     id: "PRJ_06",
@@ -56,14 +56,14 @@ const projects = [
 ];
 
 const openSource = [
-  { name: "Xavier", desc: "Memoria cognitiva para agentes IA", accent: true },
+  { name: "GitCore", desc: "Harness operacional y orquestador Git/GitHub", url: "https://github.com/iberi22/GitCore", accent: true },
+  { name: "Xavier", desc: "Memoria cognitiva para agentes IA", url: "https://github.com/iberi22/xavier", accent: false },
   { name: "Gestalt", desc: "Orquestador multi-agente (Rust)", url: "https://github.com/iberi22/gestalt", accent: false },
   { name: "edge-mesh", desc: "Redes mesh P2P + CRDT", url: "https://github.com/iberi22/edge-mesh", accent: false },
   { name: "swal-ui", desc: "Design system Svelte 5", url: "https://github.com/iberi22/swal-ui", accent: false },
   { name: "Isar Agent Memory", desc: "Memoria semántica Flutter/Dart", url: "https://github.com/iberi22/isar_agent_memory", accent: false },
   { name: "swal-local", desc: "Librería TS zero-dep local-first", url: "https://github.com/iberi22/swal-local", accent: false },
-  { name: "WebAuditMCP", desc: "Servidor MCP para auditoría web (axe-core, Playwright)", url: "https://github.com/iberi22/WebAuditMCP", accent: false },
-  { name: "Skills", desc: "Registro de skills para agentes", url: "https://github.com/iberi22/skills", accent: false },
+  { name: "Skills", desc: "Registro canónico de skills para agentes", url: "https://github.com/iberi22/skills", accent: false },
 ];
 
 const stack = ["Rust", "TypeScript", "Dart/Flutter", "Astro", "Python", "React", "Svelte 5", "PostgreSQL", "Supabase", "Agent Orchestration", "PWA / offline-first", "NixOS"];
