@@ -1,6 +1,7 @@
 # Brahyan Belalcázar — @iberi22
 
 [![Open to work](https://img.shields.io/badge/Open_to_work-Yes-brightgreen?style=flat-square)](https://iberi22.github.io/portfolio-iberi22/agenda)
+[![Portfolio](https://img.shields.io/badge/Portfolio-iberi22.github.io-22d3ee?style=flat-square)](https://iberi22.github.io/portfolio-iberi22)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-in%2Fbrahyansbr-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brahyansbr)
 [![Telegram](https://img.shields.io/badge/Telegram-@BeRi0n3-blue?style=flat-square&logo=telegram)](https://t.me/BeRi0n3)
 [![Email](https://img.shields.io/badge/Email-iberi22%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:iberi22@gmail.com)
@@ -9,70 +10,58 @@
 
 ---
 
-**Full-Stack & Systems Software Engineer — 10+ years engineering production systems** — *available for hire*
+### **Senior Full-Stack & Systems Software Engineer — 10+ Years in Production**
+*Available for engineering leadership, systems architecture, and core full-stack roles.*
 
-I engineer production-grade systems: distributed local-first architectures, low-latency cross-platform clients, and autonomous agent orchestration runtimes across industrial (mining/electrical), fiscal, editorial, and high-volume e-commerce sectors — owning the complete lifecycle from architectural modeling and protocol design to containerized deployment and performance profiling.
+A decade turning business constraints into production software: real-time industrial IoT, fiscal/legal platforms, high-volume e-commerce, mobile applications published on Google Play, and autonomous AI orchestration harnesses.
 
-**AI-Accelerated Systems Engineering:** I integrate LLM runtimes and autonomous coding agent swarms directly into deterministic development pipelines. By formalizing architectural contracts, automating design → implementation → static analysis → E2E validation loops, and enforcing strict human verification gates, I deliver high-complexity software with verified test coverage and deterministic maintainability.
+👉 **[🔍 Explore Complete Portfolio, Architecture Deep-Dives & Project Metrics](https://iberi22.github.io/portfolio-iberi22/projects)**
 
-## 🤖 AI Agent Orchestration & How I Work
+---
 
-Every project here is powered by an **autonomous AI-orchestrated engineering pipeline** utilizing [Hermes](https://github.com/iberi22/gestalt), [GitCore](https://github.com/iberi22/GitCore), and a standardized ecosystem of [agent skills](https://github.com/iberi22/skills):
+## 🏭 Production & Industry Experience (10+ Years)
 
-- **Hermes Gateway & Multi-Agent Orchestration:** Real-time autonomous orchestration powered by [Hermes](https://github.com/iberi22/gestalt) with intelligent multi-model routing (`mimo-v2.5`, `deepseek-v4`, `glm-5.3`, `gpt-4o-mini`), persistent shell sessions, execution guardrails, and persistent memory sync with [Xavier](https://github.com/iberi22/xavier).
-- **GitCore (Git & GitHub Native Engine):** [GitCore](https://github.com/iberi22/GitCore) operates directly on **Git & GitHub** to drive development via structured logic:
-  - **Deterministic Lifecycle:** Strict **1 Issue → 1 Branch → 1 PR** flow with state machines tracked in `.gitcore/` (`features.json`, `STATE.md`, `TODO.md`).
-  - **Automated Validation:** Automated PR validation, sequential merging, and CI verification gates.
-- **Sophisticated Issue Authoring & Jules Subagents:** Complex feature roadmaps are delegated to autonomous agents (Jules, OpenCode, Claude Code) using the canonical [GitCore-Jules Protocol](https://github.com/iberi22/skills):
-  - **Pre-Delegation QA:** Rigorous issue audit scripts that prevent empty bodies, ungrounded specs, or missing files before delegation.
-  - **Micro-Fragmentation:** Breaking features down into batches of up to **15 parallel micro-tasks** for rapid execution.
-  - **Disjoint File Islands:** Strict file-isolation boundaries ensuring zero merge conflicts between concurrent subagents.
-  - **Strict Acceptance Criteria:** Gherkin-format verifiable criteria with zero speculation.
-- **Cognitive Memory & Reusable Architecture:** Deep episodic memory via [Xavier](https://github.com/iberi22/xavier), unified design tokens ([swal-ui](https://github.com/iberi22/swal-ui)), modular local-first libraries ([swal-local](https://github.com/iberi22/swal-local)), and P2P mesh networking ([edge-mesh](https://github.com/iberi22/edge-mesh)).
-
-## Shipped & Live
-
-| Project | What it is | Stack | Links |
+| Organization / Sector | Key Focus & Impact | Core Stack | Details |
 |---|---|---|---|
-| **[SaberParaTodos](https://saberparatodos.space)** | Free practice-testing platform serving 16+ countries, with on-device AI evaluations. | Astro · Svelte 5 · TS | 🚀 [Live](https://saberparatodos.space) · [Repo](https://github.com/world-exams/world-exams.github.io) |
-| **[Shelf](https://estante-inventario.vercel.app)** | Offline-first inventory & POS with peer-to-peer CRDT sync — sell anywhere, no cloud dependency. | React 19 · TS · Yjs | 🚀 [Live](https://estante-inventario.vercel.app) · [Repo](https://github.com/iberi22/shelf) |
-| **[OrionHealth](https://github.com/iberi22/OrionHealth)** | Privacy-first health assistant: on-device SSI (DID, W3C VCs), offline medical standards (ICD-10, LOINC, RxNorm). | Flutter · Dart · SQLite | 🔓 [Repo](https://github.com/iberi22/OrionHealth) · [Issues](https://github.com/iberi22/OrionHealth/issues) |
-| **[Veedur-IA](https://github.com/iberi22/VeedurIA)** | Civic oversight & public procurement intelligence platform (SECOP II) with AI contract analysis, anomaly detection, and bid matchmaking. | Rust · Polars · Astro · Svelte 5 | 🔓 [Repo](https://github.com/iberi22/VeedurIA) |
-| **[GARA-G](https://github.com/iberi22/gara-g)** | DePIN mobility network & vehicular V2V mesh with real-time telemetry, AI garage copilot, and decentralized data marketplace. | Rust · Flutter · P2P · Polygon | 🔓 [Repo](https://github.com/iberi22/gara-g) |
-| **[SismoCheck](https://sismocheck-evaluaci-n-r-pida-post-sismo-dossier-a-138396941132.us-east1.run.app/)** | Post-earthquake structural triage PWA based on ATC-20 forensic criteria, with on-device AI. | React 19 · WebGPU | 🚀 [Live](https://sismocheck-evaluaci-n-r-pida-post-sismo-dossier-a-138396941132.us-east1.run.app/) |
+| **[Tripro SPA (Chile)](https://iberi22.github.io/portfolio-iberi22/projects)**<br>*Mining & Industrial Services* | Real-time heavy machinery sensor telemetry, IoT ingestion pipelines, automated issue triage bots, and PWA platforms with Flow payments. | PostgreSQL · Next.js · React · Astro · Python · n8n · Node.js | [Deep Dive](https://iberi22.github.io/portfolio-iberi22/projects) |
+| **[Restrepo y Londoño / Smartax](https://iberi22.github.io/portfolio-iberi22/projects)**<br>*Fiscal & Legal Advisory* | Official mobile app published on Google Play Store, custom WordPress PHP plugin architecture, REST APIs, tax calculators & automated PDF engines. | React Native · Expo · PHP · WordPress · REST API · Google Play | [Deep Dive](https://iberi22.github.io/portfolio-iberi22/projects) |
+| **[Siesa Ecommerce / E-Solutions](https://iberi22.github.io/portfolio-iberi22/projects)**<br>*Enterprise B2B/B2C E-Commerce* | Production logistics dispatch calendar, Linux CentOS 7 LAMP infrastructure provisioning, automated CI/CD pipelines & VPN/SSL security hardening. | PHP (Yii2) · Angular · Linux CentOS · LAMP · CI/CD · MySQL | [Deep Dive](https://iberi22.github.io/portfolio-iberi22/projects) |
+| **[LogicalSoft](https://iberi22.github.io/portfolio-iberi22/projects)**<br>*ERP, Signage & Retail Analytics* | SIIP Móvil hybrid app on Play Store, 15+ operational UI modules, QR code access control, offline commercial census with IndexedDB & Electron desktop apps. | PHP · JavaScript · MySQL · ReactJS · Electron · Play Store · AWS/GCP | [Deep Dive](https://iberi22.github.io/portfolio-iberi22/projects) |
+| **[Los Tres Editores SAS](https://iberi22.github.io/portfolio-iberi22/projects)**<br>*Publishing & Large-Scale Print* | Advanced PostgreSQL stored procedures/triggers, Java EE CRUD services, automated dynamic PDF generation with FPDF/iReport & Debian server management. | PostgreSQL (Functions/Triggers) · Java EE · PHP · Debian Linux | [Deep Dive](https://iberi22.github.io/portfolio-iberi22/projects) |
 
-## Published & Open Source
+---
 
-| Project | What it is | Links |
-|---|---|---|
-| **GitCore** | Autonomous agent harness, task dispatcher, and Git workflow automation engine. | [Repo](https://github.com/iberi22/GitCore) |
-| **skills** | Canonical registry & skill framework for AI coding agents (Jules, Hermes, Antigravity) — issue protocols, wave orchestration & QA. | [Repo](https://github.com/iberi22/skills) |
-| **Gestalt** | Rust CLI meta-agent orchestrator with a coordination bus for multi-agent systems. | [Repo](https://github.com/iberi22/gestalt) |
-| **Xavier** | Cognitive memory engine (vector search, episodic graphs) for autonomous agents. | [Repo](https://github.com/iberi22/xavier) |
-| **edge-mesh** | P2P mesh networking library: CRDT sync, post-quantum identity, peer-to-peer transport. | [Repo](https://github.com/iberi22/edge-mesh) |
-| **OrionHealth** | Privacy-first health assistant: on-device SSI (DID, W3C VCs), offline medical standards (ICD-10, LOINC, RxNorm). | [Repo](https://github.com/iberi22/OrionHealth) |
-| **isar_agent_memory** | Semantic cognitive-memory engine for Flutter/Dart. Published on pub.dev. | 📦 [pub.dev](https://pub.dev/packages/isar_agent_memory) · [Repo](https://github.com/iberi22/isar_agent_memory) |
-| **swal-ui** | Svelte 5 design system with theme tokens, reused across every web app above. | [Repo](https://github.com/iberi22/swal-ui) |
-| **swal-local** | Zero-dependency TypeScript library: transactional IndexedDB, PBKDF2 auth, Web Speech TTS/STT, Ollama client. | [Repo](https://github.com/iberi22/swal-local) |
-| **NIDO** | Intelligent home administration: plans, rules, measurements for any dwelling, plus a private verified P2P rental network. | [Repo](https://github.com/iberi22/nido) |
+## ⚡ Core Deep Tech & Autonomous Agent Ecosystem
 
-More public work: [swal-desktop](https://github.com/iberi22/swal-desktop) (NixOS + Hyprland AI workspace) · [swal-files](https://github.com/iberi22/swal-files) (WGPU file manager) · [photon-core](https://github.com/iberi22/photon-core) (optical data encoding research) · [swal-portal](https://github.com/iberi22/swal-portal) (SWAL — Sovereign Decentralized AI Network portal).
+| System | Role & Architectural Function | Stack | Link |
+|---|---|---|---|
+| **[Xavier](https://github.com/iberi22/xavier)** | Local cognitive memory core in Rust with vector storage, SQLite-vec / pgvector, HNSW similarity search & Docker microservice. | Rust · SQLite-vec · Docker · HNSW | [Repo](https://github.com/iberi22/xavier) |
+| **[GitCore](https://github.com/iberi22/GitCore)** | Autonomous multi-agent Git/GitHub orchestrator with 15 parallel micro-tasks batching, disjoint file islands & zero-conflict merge. | Rust · Agent Orchestration · GitHub API | [Repo](https://github.com/iberi22/GitCore) |
+| **[Gestalt](https://github.com/iberi22/gestalt)** | Multi-agent swarm orchestrator CLI in Rust with SurrealDB state persistence and isolated test sandboxes. | Rust · SurrealDB · Tokio Async | [Repo](https://github.com/iberi22/gestalt) |
+| **[Photon-Core](https://github.com/iberi22/photon-core)** | High-performance 5D optical data storage simulation in Rust with Reed-Solomon ECC & >470 MB/s encoding throughput. | Rust · Physics Sim · Reed-Solomon | [Repo](https://github.com/iberi22/photon-core) |
+| **[edge-mesh](https://github.com/iberi22/edge-mesh)** | P2P mesh network library with CRDT conflict-free state synchronization and post-quantum cryptography (ML-DSA-65). | Rust · TypeScript · CRDT · WebRTC | [Repo](https://github.com/iberi22/edge-mesh) |
+| **[OrionHealth](https://github.com/iberi22/OrionHealth)** | Privacy-first personal health tracking mobile app with on-device encrypted SQLite storage and background synchronization. | Flutter · Dart · SQLite / SQLCipher | [Repo](https://github.com/iberi22/OrionHealth) |
+| **[GARA-G](https://github.com/iberi22/gara-g)** | DePIN mobility network & vehicular V2V mesh with real-time telemetry, AI garage copilot, and Polygon integration. | Rust · Flutter · P2P · Polygon | [Repo](https://github.com/iberi22/gara-g) |
+| **[SaberParaTodos](https://saberparatodos.space)** | Educational practice exam platform for 16+ countries with local AI evaluation and offline support. | Astro · Svelte 5 · TailwindCSS | [Live](https://saberparatodos.space) |
+| **[Shelf](https://estante-inventario.vercel.app)** | Offline-first inventory & POS with peer-to-peer CRDT synchronization. | React 19 · TypeScript · Yjs | [Live](https://estante-inventario.vercel.app) |
 
-## SouthWest AI Labs (SWAL)
+---
 
-The research lab where my agent-infrastructure tools live: local-first memory engines, P2P mesh networking, and multi-agent orchestration runtimes — all built around one principle: **AI should run on your device, not in someone else's cloud.**
+## 🛠️ Senior Technical Competencies
 
-→ [github.com/southwest-ai-labs](https://github.com/southwest-ai-labs) · [Lab site](https://southwest-ai-labs.github.io)
+- **Backend & Full-Stack:** PHP (Senior / Core, custom themes & plugins in WordPress, APIs REST, Yii2), TypeScript, JavaScript (Node.js), Python, Rust, Dart, Java EE, Shell / Bash.
+- **Databases & Vector Storage:** PostgreSQL (Stored Procedures, Triggers, pgvector), MySQL / MariaDB, SQLite (SQLCipher, SQLite-vec), SurrealDB, Redis, HNSW Cosine Indexing.
+- **AI Agentic Infrastructure:** Hermes Gateway, GitCore Engine, Gestalt Orchestrator, Jules subagents, Claude Code, OpenCode, Custom Skills Authoring, Multi-Provider Fallback Routing.
+- **Infrastructure, Hosting & DevSecOps:** Dedicated Linux VPS (Ubuntu, Debian, NixOS), cPanel / WHM, Nginx & Apache tuning, PHP-FPM optimization, Docker containerization, Vulnerability Scanning, Antivirus tooling & MCP (Model Context Protocol) Security Review Tools.
 
-## Tech stack
+---
 
-`Rust` · `TypeScript` · `Dart/Flutter` · `React` · `Svelte 5` · `Astro` · `Python` · `PostgreSQL` · `Supabase` · `NixOS` · `Docker` · `PWA/offline-first` · `WebAssembly` · `LLM tooling & agent orchestration`
+## 📬 Contact & Technical Advisory
 
-## Work with me
+Available for core engineering roles, technical architecture advisory, and AI agent pipeline implementations.
 
-Available for engineering leadership, systems architecture, and core development roles (contract or full-time). I also conduct **Technical Architecture & Agentic Infrastructure Audits**: analyzing existing codebases, developer workflows, local-first data pipelines, and CI/CD harnesses to implement high-throughput autonomous agent execution and deterministic delivery.
-
-- 📅 [Book a technical session](https://iberi22.github.io/portfolio-iberi22/agenda)
-- 💼 [LinkedIn](https://www.linkedin.com/in/brahyansbr)
-- ✉️ iberi22@gmail.com
-- 💬 [@BeRi0n3](https://t.me/BeRi0n3) on Telegram
+- 📅 **[Book a 60-min Technical Session](https://iberi22.github.io/portfolio-iberi22/agenda)**
+- 💼 **[LinkedIn Profile](https://www.linkedin.com/in/brahyansbr)**
+- ✉️ **iberi22@gmail.com**
+- 💬 **Telegram:** [@BeRi0n3](https://t.me/BeRi0n3)
+- 🌐 **[Full Portfolio Website](https://iberi22.github.io/portfolio-iberi22)**
