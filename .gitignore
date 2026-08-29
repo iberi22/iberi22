@@ -25,4 +25,5 @@ pnpm-debug.log*
 # Personal files
 *.md
 !README.md
+!README.*.md
 !README.en.md
