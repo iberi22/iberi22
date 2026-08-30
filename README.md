@@ -10,7 +10,7 @@
 
 ---
 
-### **Senior Full-Stack & Systems Software Engineer **
+### Senior Full-Stack & Systems Software Engineer 
 *Available for full-stack roles.*
 
 A decade turning business constraints into production software: real-time industrial IoT, fiscal/legal platforms, high-volume e-commerce, mobile applications published on Google Play, and autonomous AI orchestration harnesses.
