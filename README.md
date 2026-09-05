@@ -11,28 +11,10 @@
 ---
 
 ### Senior Full-Stack & Systems Software Engineer 
-*Available for full-stack roles.*
-
-A decade turning business constraints into production software: real-time industrial IoT, fiscal/legal platforms, high-volume e-commerce, mobile applications published on Google Play, and autonomous AI orchestration harnesses.
-
-👉 **[🔍 Explore Complete Portfolio, Architecture Deep-Dives & Project Metrics](https://iberi22.github.io/portfolio-iberi22/projects)**
-
-
-## 🛠️ Senior Technical Competencies
-
-- **Backend & Full-Stack:** PHP (Senior / Core, custom themes & plugins in WordPress, APIs REST, Yii2), TypeScript, JavaScript (Node.js), Python, Rust, Dart, Java EE, Shell / Bash.
-- **Databases & Vector Storage:** PostgreSQL (Stored Procedures, Triggers, pgvector), MySQL / MariaDB, SQLite (SQLCipher, SQLite-vec), SurrealDB, Redis, HNSW Cosine Indexing.
-- **AI Agentic Infrastructure:** Hermes Gateway, GitCore Engine, Gestalt Orchestrator, Jules subagents, Claude Code, OpenCode, Custom Skills Authoring, Multi-Provider Fallback Routing.
-- **Infrastructure, Hosting & DevSecOps:** Dedicated Linux VPS (Ubuntu, Debian, NixOS), cPanel / WHM, Nginx & Apache tuning, PHP-FPM optimization, Docker containerization, Vulnerability Scanning, Antivirus tooling & MCP (Model Context Protocol) Security Review Tools.
 
 ---
 
 ## 📬 Contact & Technical Advisory
 
-Available for core engineering roles, technical architecture advisory, and AI agent pipeline implementations.
 
-- 📅 **[Book a 60-min Technical Session](https://iberi22.github.io/portfolio-iberi22/agenda)**
-- 💼 **[LinkedIn Profile](https://www.linkedin.com/in/brahyansbr)**
-- ✉️ **iberi22@gmail.com**
-- 💬 **Telegram:** [@BeRi0n3](https://t.me/BeRi0n3)
 - 🌐 **[Full Portfolio Website](https://iberi22.github.io/portfolio-iberi22)**
