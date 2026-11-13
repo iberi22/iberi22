@@ -10,6 +10,6 @@
 
 ---
 
-### Senior WEB Full-Stack & Systems Software Engineer 
+### WEB Full-Stack & Systems Software expert 
 
 ---
